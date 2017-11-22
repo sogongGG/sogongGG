@@ -1,13 +1,14 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
 <!--
 author: W3layouts
 author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
-<!DOCTYPE html>
 <html>
 <head>
-<title>Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Sign In & Sign Up :: w3layouts</title>
+<title>Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Privacy Policy :: w3layouts</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -44,7 +45,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- header -->
 	<div class="agileits_header">
 		<div class="w3l_offers">
-			<a href="products.html">Today's special Offers !</a>
+			<a href="products.jsp">Today's special Offers !</a>
 		</div>
 		<div class="w3l_search">
 			<form action="#" method="post">
@@ -68,8 +69,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="mega-dropdown-menu">
 						<div class="w3ls_vegetables">
 							<ul class="dropdown-menu drp-mnu">
-								<li><a href="login.html">Login</a></li> 
-								<li><a href="login.html">Sign Up</a></li>
+								<li><a href="login.jsp">Login</a></li> 
+								<li><a href="login.jsp">Sign Up</a></li>
 							</ul>
 						</div>                  
 					</div>	
@@ -77,7 +78,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</ul>
 		</div>
 		<div class="w3l_header_right1">
-			<h2><a href="mail.html">Contact Us</a></h2>
+			<h2><a href="mail.jsp">Contact Us</a></h2>
 		</div>
 		<div class="clearfix"> </div>
 	</div>
@@ -100,14 +101,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="logo_products">
 		<div class="container">
 			<div class="w3ls_logo_products_left">
-				<h1><a href="index.html"><span>Grocery</span> Store</a></h1>
+				<h1><a href="index.jsp"><span>Grocery</span> Store</a></h1>
 			</div>
 			<div class="w3ls_logo_products_left1">
 				<ul class="special_items">
-					<li><a href="events.html">Events</a><i>/</i></li>
-					<li><a href="about.html">About Us</a><i>/</i></li>
-					<li><a href="products.html">Best Deals</a><i>/</i></li>
-					<li><a href="services.html">Services</a></li>
+					<li><a href="events.jsp">Events</a><i>/</i></li>
+					<li><a href="about.jsp">About Us</a><i>/</i></li>
+					<li><a href="products.jsp">Best Deals</a><i>/</i></li>
+					<li><a href="services.jsp">Services</a></li>
 				</ul>
 			</div>
 			<div class="w3ls_logo_products_left1">
@@ -124,8 +125,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="products-breadcrumb">
 		<div class="container">
 			<ul>
-				<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a><span>|</span></li>
-				<li>Sign In & Sign Up</li>
+				<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.jsp">Home</a><span>|</span></li>
+				<li>Privacy Policy & Terms of Use</li>
 			</ul>
 		</div>
 	</div>
@@ -133,7 +134,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- banner -->
 	<div class="banner">
 		<div class="w3l_banner_nav_left">
-		<nav class="navbar nav_bottom">
+			<nav class="navbar nav_bottom">
 			 <!-- Brand and toggle get grouped for better mobile display -->
 			  <div class="navbar-header nav_2">
 				  <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
@@ -146,129 +147,117 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			   <!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav nav_1">
-						<li><a href="products.html">Branded Foods</a></li>
-						<li><a href="household.html">Households</a></li>
+						<li><a href="products.jsp">Branded Foods</a></li>
+						<li><a href="household.jsp">Households</a></li>
 						<li class="dropdown mega-dropdown active">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Veggies & Fruits<span class="caret"></span></a>				
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
 									<ul>	
-										<li><a href="vegetables.html">Vegetables</a></li>
-										<li><a href="vegetables.html">Fruits</a></li>
+										<li><a href="vegetables.jsp">Vegetables</a></li>
+										<li><a href="vegetables.jsp">Fruits</a></li>
 									</ul>
 								</div>                  
 							</div>				
 						</li>
-						<li><a href="kitchen.html">Kitchen</a></li>
-						<li><a href="short-codes.html">Short Codes</a></li>
+						<li><a href="kitchen.jsp">Kitchen</a></li>
+						<li><a href="short-codes.jsp">Short Codes</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Beverages<span class="caret"></span></a>
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
 									<ul>
-										<li><a href="drinks.html">Soft Drinks</a></li>
-										<li><a href="drinks.html">Juices</a></li>
+										<li><a href="drinks.jsp">Soft Drinks</a></li>
+										<li><a href="drinks.jsp">Juices</a></li>
 									</ul>
 								</div>                  
 							</div>	
 						</li>
-						<li><a href="pet.html">Pet Food</a></li>
+						<li><a href="pet.jsp">Pet Food</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Frozen Foods<span class="caret"></span></a>
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
 									<ul>
-										<li><a href="frozen.html">Frozen Snacks</a></li>
-										<li><a href="frozen.html">Frozen Nonveg</a></li>
+										<li><a href="frozen.jsp">Frozen Snacks</a></li>
+										<li><a href="frozen.jsp">Frozen Nonveg</a></li>
 									</ul>
 								</div>                  
 							</div>	
 						</li>
-						<li><a href="bread.html">Bread & Bakery</a></li>
+						<li><a href="bread.jsp">Bread & Bakery</a></li>
 					</ul>
 				 </div><!-- /.navbar-collapse -->
 			</nav>
 		</div>
 		<div class="w3l_banner_nav_right">
-<!-- login -->
-		<div class="w3_login">
-			<h3>Sign In & Sign Up</h3>
-			<div class="w3_login_module">
-				<div class="module form-module">
-				  <div class="toggle"><i class="fa fa-times fa-pencil"></i>
-					<div class="tooltip">Click Me</div>
-				  </div>
-				  <div class="form">
-					<h2>Login to your account</h2>
-					<form action="#" method="post">
-					  <input type="text" name="Username" placeholder="Username" required=" ">
-					  <input type="password" name="Password" placeholder="Password" required=" ">
-					  <input type="submit" value="Login">
-					</form>
-				  </div>
-				  <div class="form">
-					<h2>Create an account</h2>
-					<form action="#" method="post">
-					  <input type="text" name="Username" placeholder="Username" required=" ">
-					  <input type="password" name="Password" placeholder="Password" required=" ">
-					  <input type="email" name="Email" placeholder="Email Address" required=" ">
-					  <input type="text" name="Phone" placeholder="Phone Number" required=" ">
-					  <input type="submit" value="Register">
-					</form>
-				  </div>
-				  <div class="cta"><a href="#">Forgot your password?</a></div>
+<!-- privacy -->
+		<div class="privacy">
+			<div class="privacy1">
+				<h3>Privacy Policy</h3>
+				<div class="banner-bottom-grid1 privacy1-grid">
+					<ul>
+						<li><i class="glyphicon glyphicon-user" aria-hidden="true"></i></li>
+						<li>Profile <span>Excepteur sint occaecat cupidatat non proident, sunt in
+							culpa qui officia deserunt mollit anim id est laborum.</span></li>
+					</ul>
+					<ul>
+						<li><i class="glyphicon glyphicon-search" aria-hidden="true"></i></li>
+						<li>Search <span>Excepteur sint occaecat cupidatat non proident, sunt in
+							culpa qui officia deserunt mollit anim id est laborum.</span></li>
+					</ul>
+					<ul>
+						<li><i class="glyphicon glyphicon-paste" aria-hidden="true"></i></li>
+						<li>News Feed <span>Excepteur sint occaecat cupidatat non proident, sunt in
+							culpa qui officia deserunt mollit anim id est laborum.</span></li>
+					</ul>
+					<ul>
+						<li><i class="glyphicon glyphicon-qrcode" aria-hidden="true"></i></li>
+						<li>Applications <span>Excepteur sint occaecat cupidatat non proident, sunt in
+							culpa qui officia deserunt mollit anim id est laborum.</span></li>
+					</ul>
 				</div>
 			</div>
-			<script>
-				$('.toggle').click(function(){
-				  // Switches the Icon
-				  $(this).children('i').toggleClass('fa-pencil');
-				  // Switches the forms  
-				  $('.form').animate({
-					height: "toggle",
-					'padding-top': 'toggle',
-					'padding-bottom': 'toggle',
-					opacity: "toggle"
-				  }, "slow");
-				});
-			</script>
+			<div class="privacy1">
+				<h3>Terms of Use</h3>
+				<div class="banner-bottom-grid1 privacy2-grid">
+					<div class="privacy2-grid1">
+						<h4>deserunt mollit anim id est laborum?</h4>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+						<div class="privacy2-grid1-sub">
+							<h5>1. sint occaecat cupidatat non proident, sunt</h5>
+							<p>Excepteur sint occaecat cupidatat non proident, sunt in
+								culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+						<div class="privacy2-grid1-sub">
+							<h5>2.perspiciatis unde omnis iste natus error</h5>
+							<p>Excepteur sint occaecat cupidatat non proident, sunt in
+								culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+						<div class="privacy2-grid1-sub">
+							<h5>3. natus error sit voluptatem accusant</h5>
+							<p>Excepteur sint occaecat cupidatat non proident, sunt in
+								culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+						<div class="privacy2-grid1-sub">
+							<h5>4. occaecat cupidatat non proident, sunt in</h5>
+							<p>Excepteur sint occaecat cupidatat non proident, sunt in
+								culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+						<div class="privacy2-grid1-sub">
+							<h5>5. deserunt mollit anim id est laborum</h5>
+							<p>Excepteur sint occaecat cupidatat non proident, sunt in
+								culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-<!-- //login -->
+<!-- //privacy -->
 		</div>
 		<div class="clearfix"></div>
 	</div>
 <!-- //banner -->
-<!-- newsletter-top-serv-btm -->
-	<div class="newsletter-top-serv-btm">
-		<div class="container">
-			<div class="col-md-4 wthree_news_top_serv_btm_grid">
-				<div class="wthree_news_top_serv_btm_grid_icon">
-					<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-				</div>
-				<h3>Nam libero tempore</h3>
-				<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus 
-					saepe eveniet ut et voluptates repudiandae sint et.</p>
-			</div>
-			<div class="col-md-4 wthree_news_top_serv_btm_grid">
-				<div class="wthree_news_top_serv_btm_grid_icon">
-					<i class="fa fa-bar-chart" aria-hidden="true"></i>
-				</div>
-				<h3>officiis debitis aut rerum</h3>
-				<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus 
-					saepe eveniet ut et voluptates repudiandae sint et.</p>
-			</div>
-			<div class="col-md-4 wthree_news_top_serv_btm_grid">
-				<div class="wthree_news_top_serv_btm_grid_icon">
-					<i class="fa fa-truck" aria-hidden="true"></i>
-				</div>
-				<h3>eveniet ut et voluptates</h3>
-				<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus 
-					saepe eveniet ut et voluptates repudiandae sint et.</p>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-<!-- //newsletter-top-serv-btm -->
 <!-- newsletter -->
 	<div class="newsletter">
 		<div class="container">
@@ -291,29 +280,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-3 w3_footer_grid">
 				<h3>information</h3>
 				<ul class="w3_footer_grid_list">
-					<li><a href="events.html">Events</a></li>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="products.html">Best Deals</a></li>
-					<li><a href="services.html">Services</a></li>
-					<li><a href="short-codes.html">Short Codes</a></li>
+					<li><a href="events.jsp">Events</a></li>
+					<li><a href="about.jsp">About Us</a></li>
+					<li><a href="products.jsp">Best Deals</a></li>
+					<li><a href="services.jsp">Services</a></li>
+					<li><a href="short-codes.jsp">Short Codes</a></li>
 				</ul>
 			</div>
 			<div class="col-md-3 w3_footer_grid">
 				<h3>policy info</h3>
 				<ul class="w3_footer_grid_list">
-					<li><a href="faqs.html">FAQ</a></li>
-					<li><a href="privacy.html">privacy policy</a></li>
-					<li><a href="privacy.html">terms of use</a></li>
+					<li><a href="faqs.jsp">FAQ</a></li>
+					<li><a href="privacy.jsp">privacy policy</a></li>
+					<li><a href="privacy.jsp">terms of use</a></li>
 				</ul>
 			</div>
 			<div class="col-md-3 w3_footer_grid">
 				<h3>what in stores</h3>
 				<ul class="w3_footer_grid_list">
-					<li><a href="pet.html">Pet Food</a></li>
-					<li><a href="frozen.html">Frozen Snacks</a></li>
-					<li><a href="kitchen.html">Kitchen</a></li>
-					<li><a href="products.html">Branded Foods</a></li>
-					<li><a href="household.html">Households</a></li>
+					<li><a href="pet.jsp">Pet Food</a></li>
+					<li><a href="frozen.jsp">Frozen Snacks</a></li>
+					<li><a href="kitchen.jsp">Kitchen</a></li>
+					<li><a href="products.jsp">Branded Foods</a></li>
+					<li><a href="household.jsp">Households</a></li>
 				</ul>
 			</div>
 			<div class="col-md-3 w3_footer_grid">

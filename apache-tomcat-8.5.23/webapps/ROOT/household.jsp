@@ -1,13 +1,14 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
 <!--
 author: W3layouts
 author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
-<!DOCTYPE html>
 <html>
 <head>
-<title>Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Products :: w3layouts</title>
+<title>Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Households :: w3layouts</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -44,7 +45,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- header -->
 	<div class="agileits_header">
 		<div class="w3l_offers">
-			<a href="products.html">Today's special Offers !</a>
+			<a href="products.jsp">Today's special Offers !</a>
 		</div>
 		<div class="w3l_search">
 			<form action="#" method="post">
@@ -68,8 +69,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="mega-dropdown-menu">
 						<div class="w3ls_vegetables">
 							<ul class="dropdown-menu drp-mnu">
-								<li><a href="login.html">Login</a></li> 
-								<li><a href="login.html">Sign Up</a></li>
+								<li><a href="login.jsp">Login</a></li> 
+								<li><a href="login.jsp">Sign Up</a></li>
 							</ul>
 						</div>                  
 					</div>	
@@ -77,7 +78,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</ul>
 		</div>
 		<div class="w3l_header_right1">
-			<h2><a href="mail.html">Contact Us</a></h2>
+			<h2><a href="mail.jsp">Contact Us</a></h2>
 		</div>
 		<div class="clearfix"> </div>
 	</div>
@@ -100,14 +101,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="logo_products">
 		<div class="container">
 			<div class="w3ls_logo_products_left">
-				<h1><a href="index.html"><span>Grocery</span> Store</a></h1>
+				<h1><a href="index.jsp"><span>Grocery</span> Store</a></h1>
 			</div>
 			<div class="w3ls_logo_products_left1">
 				<ul class="special_items">
-					<li><a href="events.html">Events</a><i>/</i></li>
-					<li><a href="about.html">About Us</a><i>/</i></li>
-					<li><a href="products.html">Best Deals</a><i>/</i></li>
-					<li><a href="services.html">Services</a></li>
+					<li><a href="events.jsp">Events</a><i>/</i></li>
+					<li><a href="about.jsp">About Us</a><i>/</i></li>
+					<li><a href="products.jsp">Best Deals</a><i>/</i></li>
+					<li><a href="services.jsp">Services</a></li>
 				</ul>
 			</div>
 			<div class="w3ls_logo_products_left1">
@@ -124,8 +125,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="products-breadcrumb">
 		<div class="container">
 			<ul>
-				<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a><span>|</span></li>
-				<li>Branded Foods</li>
+				<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.jsp">Home</a><span>|</span></li>
+				<li>Households</li>
 			</ul>
 		</div>
 	</div>
@@ -146,105 +147,57 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			   <!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav nav_1">
-						<li><a href="products.html">Branded Foods</a></li>
-						<li><a href="household.html">Households</a></li>
+						<li><a href="products.jsp">Branded Foods</a></li>
+						<li><a href="household.jsp">Households</a></li>
 						<li class="dropdown mega-dropdown active">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Veggies & Fruits<span class="caret"></span></a>				
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
 									<ul>	
-										<li><a href="vegetables.html">Vegetables</a></li>
-										<li><a href="vegetables.html">Fruits</a></li>
+										<li><a href="vegetables.jsp">Vegetables</a></li>
+										<li><a href="vegetables.jsp">Fruits</a></li>
 									</ul>
 								</div>                  
 							</div>				
 						</li>
-						<li><a href="kitchen.html">Kitchen</a></li>
-						<li><a href="short-codes.html">Short Codes</a></li>
+						<li><a href="kitchen.jsp">Kitchen</a></li>
+						<li><a href="short-codes.jsp">Short Codes</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Beverages<span class="caret"></span></a>
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
 									<ul>
-										<li><a href="drinks.html">Soft Drinks</a></li>
-										<li><a href="drinks.html">Juices</a></li>
+										<li><a href="drinks.jsp">Soft Drinks</a></li>
+										<li><a href="drinks.jsp">Juices</a></li>
 									</ul>
 								</div>                  
 							</div>	
 						</li>
-						<li><a href="pet.html">Pet Food</a></li>
+						<li><a href="pet.jsp">Pet Food</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Frozen Foods<span class="caret"></span></a>
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
 									<ul>
-										<li><a href="frozen.html">Frozen Snacks</a></li>
-										<li><a href="frozen.html">Frozen Nonveg</a></li>
+										<li><a href="frozen.jsp">Frozen Snacks</a></li>
+										<li><a href="frozen.jsp">Frozen Nonveg</a></li>
 									</ul>
 								</div>                  
 							</div>	
 						</li>
-						<li><a href="bread.html">Bread & Bakery</a></li>
+						<li><a href="bread.jsp">Bread & Bakery</a></li>
 					</ul>
 				 </div><!-- /.navbar-collapse -->
 			</nav>
 		</div>
 		<div class="w3l_banner_nav_right">
-			<div class="w3l_banner_nav_right_banner3">
+			<div class="w3l_banner_nav_right_banner4">
 				<h3>Best Deals For New Products<span class="blink_me"></span></h3>
 			</div>
-			<div class="w3l_banner_nav_right_banner3_btm">
-				<div class="col-md-4 w3l_banner_nav_right_banner3_btml">
-					<div class="view view-tenth">
-						<img src="images/13.jpg" alt=" " class="img-responsive" />
-						<div class="mask">
-							<h4>Grocery Store</h4>
-							<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
-						</div>
-					</div>
-					<h4>Utensils</h4>
-					<ol>
-						<li>sunt in culpa qui officia</li>
-						<li>commodo consequat</li>
-						<li>sed do eiusmod tempor incididunt</li>
-					</ol>
-				</div>
-				<div class="col-md-4 w3l_banner_nav_right_banner3_btml">
-					<div class="view view-tenth">
-						<img src="images/14.jpg" alt=" " class="img-responsive" />
-						<div class="mask">
-							<h4>Grocery Store</h4>
-							<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
-						</div>
-					</div>
-					<h4>Hair Care</h4>
-					<ol>
-						<li>enim ipsam voluptatem officia</li>
-						<li>tempora incidunt ut labore et</li>
-						<li>vel eum iure reprehenderit</li>
-					</ol>
-				</div>
-				<div class="col-md-4 w3l_banner_nav_right_banner3_btml">
-					<div class="view view-tenth">
-						<img src="images/15.jpg" alt=" " class="img-responsive" />
-						<div class="mask">
-							<h4>Grocery Store</h4>
-							<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
-						</div>
-					</div>
-					<h4>Cookies</h4>
-					<ol>
-						<li>dolorem eum fugiat voluptas</li>
-						<li>ut aliquid ex ea commodi</li>
-						<li>magnam aliquam quaerat</li>
-					</ol>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<div class="w3ls_w3l_banner_nav_right_grid">
-				<h3>Popular Brands</h3>
+			<div class="w3ls_w3l_banner_nav_right_grid w3ls_w3l_banner_nav_right_grid_sub">
+				<h3>Household Products</h3>
 				<div class="w3ls_w3l_banner_nav_right_grid1">
-					<h6>food</h6>
+					<h6>cleaning</h6>
 					<div class="col-md-3 w3ls_w3l_banner_left">
 						<div class="hover14 column">
 						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
@@ -255,9 +208,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="single.html"><img src="images/5.png" alt=" " class="img-responsive" /></a>
-											<p>knorr instant soup (100 gm)</p>
-											<h4>$3.00 <span>$5.00</span></h4>
+											<a href="single.jsp"><img src="images/17.png" alt=" " class="img-responsive" /></a>
+											<p>dishwash gel, lemon  (1.5 ltr)</p>
+											<h4>$8.00 <span>$10.00</span></h4>
 										</div>
 										<div class="snipcart-details">
 											<form action="#" method="post">
@@ -265,8 +218,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 													<input type="hidden" name="cmd" value="_cart" />
 													<input type="hidden" name="add" value="1" />
 													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="knorr instant soup" />
-													<input type="hidden" name="amount" value="3.00" />
+													<input type="hidden" name="item_name" value="dishwash gel, lemon" />
+													<input type="hidden" name="amount" value="8.00" />
 													<input type="hidden" name="discount_amount" value="1.00" />
 													<input type="hidden" name="currency_code" value="USD" />
 													<input type="hidden" name="return" value=" " />
@@ -291,9 +244,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="single.html"><img src="images/6.png" alt=" " class="img-responsive" /></a>
-											<p>chings noodles (75 gm)</p>
-											<h4>$5.00 <span>$8.00</span></h4>
+											<a href="single.jsp"><img src="images/18.png" alt=" " class="img-responsive" /></a>
+											<p>dish wash bar (500 gm)</p>
+											<h4>$2.00 <span>$4.00</span></h4>
 										</div>
 										<div class="snipcart-details">
 											<form action="#" method="post">
@@ -301,119 +254,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 													<input type="hidden" name="cmd" value="_cart" />
 													<input type="hidden" name="add" value="1" />
 													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="chings noodles" />
-													<input type="hidden" name="amount" value="5.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="USD" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-						</div>
-					</div>
-					<div class="col-md-3 w3ls_w3l_banner_left">
-						<div class="hover14 column">
-						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid_pos">
-								<img src="images/offer.png" alt=" " class="img-responsive" />
-							</div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="single.html"><img src="images/7.png" alt=" " class="img-responsive" /></a>
-											<p>lahsun sev (150 gm)</p>
-											<h4>$3.00 <span>$5.00</span></h4>
-										</div>
-										<div class="snipcart-details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="lahsun sev" />
-													<input type="hidden" name="amount" value="3.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="USD" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-						</div>
-					</div>
-					<div class="col-md-3 w3ls_w3l_banner_left">
-						<div class="hover14 column">
-						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid_pos">
-								<img src="images/offer.png" alt=" " class="img-responsive" />
-							</div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="single.html"><img src="images/8.png" alt=" " class="img-responsive" /></a>
-											<p>premium bake rusk (300 gm)</p>
-											<h4>$5.00 <span>$7.00</span></h4>
-										</div>
-										<div class="snipcart-details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="premium bake rusk" />
-													<input type="hidden" name="amount" value="5.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="USD" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-						</div>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="w3ls_w3l_banner_nav_right_grid1">
-					<h6>vegetables & fruits</h6>
-					<div class="col-md-3 w3ls_w3l_banner_left">
-						<div class="hover14 column">
-						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid_pos">
-								<img src="images/offer.png" alt=" " class="img-responsive" />
-							</div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="single.html"><img src="images/9.png" alt=" " class="img-responsive" /></a>
-											<p>fresh spinach (palak)</p>
-											<h4>$2.00 <span>$3.00</span></h4>
-										</div>
-										<div class="snipcart-details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="fresh spinach" />
+													<input type="hidden" name="item_name" value="dish wash bar" />
 													<input type="hidden" name="amount" value="2.00" />
 													<input type="hidden" name="discount_amount" value="1.00" />
 													<input type="hidden" name="currency_code" value="USD" />
@@ -439,8 +280,120 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="single.html"><img src="images/10.png" alt=" " class="img-responsive" /></a>
-											<p>fresh mango dasheri (1 kg)</p>
+											<a href="single.jsp"><img src="images/19.png" alt=" " class="img-responsive" /></a>
+											<p>air freshener (50 gm)</p>
+											<h4>$3.00 <span>$5.00</span></h4>
+										</div>
+										<div class="snipcart-details">
+											<form action="#" method="post">
+												<fieldset>
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" />
+													<input type="hidden" name="business" value=" " />
+													<input type="hidden" name="item_name" value="air freshener" />
+													<input type="hidden" name="amount" value="3.00" />
+													<input type="hidden" name="discount_amount" value="1.00" />
+													<input type="hidden" name="currency_code" value="USD" />
+													<input type="hidden" name="return" value=" " />
+													<input type="hidden" name="cancel_return" value=" " />
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-3 w3ls_w3l_banner_left">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid_pos">
+								<img src="images/offer.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+											<a href="single.jsp"><img src="images/20.png" alt=" " class="img-responsive" /></a>
+											<p>toilet cleaner expert (1 ltr)</p>
+											<h4>$6.00 <span>$7.00</span></h4>
+										</div>
+										<div class="snipcart-details">
+											<form action="#" method="post">
+												<fieldset>
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" />
+													<input type="hidden" name="business" value=" " />
+													<input type="hidden" name="item_name" value="toilet cleaner expert" />
+													<input type="hidden" name="amount" value="6.00" />
+													<input type="hidden" name="discount_amount" value="1.00" />
+													<input type="hidden" name="currency_code" value="USD" />
+													<input type="hidden" name="return" value=" " />
+													<input type="hidden" name="cancel_return" value=" " />
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="w3ls_w3l_banner_nav_right_grid1">
+					<h6>utensils</h6>
+					<div class="col-md-3 w3ls_w3l_banner_left">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid_pos">
+								<img src="images/offer.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+											<a href="single.jsp"><img src="images/21.png" alt=" " class="img-responsive" /></a>
+											<p>princeware packaging container pack (6 no's)</p>
+											<h4>$8.00 <span>$10.00</span></h4>
+										</div>
+										<div class="snipcart-details">
+											<form action="#" method="post">
+												<fieldset>
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" />
+													<input type="hidden" name="business" value=" " />
+													<input type="hidden" name="item_name" value="princeware container" />
+													<input type="hidden" name="amount" value="8.00" />
+													<input type="hidden" name="discount_amount" value="1.00" />
+													<input type="hidden" name="currency_code" value="USD" />
+													<input type="hidden" name="return" value=" " />
+													<input type="hidden" name="cancel_return" value=" " />
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-3 w3ls_w3l_banner_left">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid_pos">
+								<img src="images/offer.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+											<a href="single.jsp"><img src="images/22.png" alt=" " class="img-responsive" /></a>
+											<p>signoraware container center press (900 ml)</p>
 											<h4>$5.00 <span>$8.00</span></h4>
 										</div>
 										<div class="snipcart-details">
@@ -449,7 +402,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 													<input type="hidden" name="cmd" value="_cart" />
 													<input type="hidden" name="add" value="1" />
 													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="fresh mango dasheri" />
+													<input type="hidden" name="item_name" value="container center press" />
 													<input type="hidden" name="amount" value="5.00" />
 													<input type="hidden" name="discount_amount" value="1.00" />
 													<input type="hidden" name="currency_code" value="USD" />
@@ -473,8 +426,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="single.html"><img src="images/11.png" alt=" " class="img-responsive" /></a>
-											<p>fresh apple red (1 kg)</p>
+											<a href="single.jsp"><img src="images/23.png" alt=" " class="img-responsive" /></a>
+											<p>ship stainless steel sauce pan single (1 pc)</p>
 											<h4>$6.00 <span>$8.00</span></h4>
 										</div>
 										<div class="snipcart-details">
@@ -483,7 +436,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 													<input type="hidden" name="cmd" value="_cart" />
 													<input type="hidden" name="add" value="1" />
 													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="fresh apple red" />
+													<input type="hidden" name="item_name" value="stainless steel pan" />
 													<input type="hidden" name="amount" value="6.00" />
 													<input type="hidden" name="discount_amount" value="1.00" />
 													<input type="hidden" name="currency_code" value="USD" />
@@ -509,9 +462,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="single.html"><img src="images/12.png" alt=" " class="img-responsive" /></a>
-											<p>fresh broccoli (500 gm)</p>
-											<h4>$4.00 <span>$6.00</span></h4>
+											<a href="single.jsp"><img src="images/24.png" alt=" " class="img-responsive" /></a>
+											<p>omega stainless steel puri dabba (1 pc)</p>
+											<h4>$6.00 <span>$8.00</span></h4>
 										</div>
 										<div class="snipcart-details">
 											<form action="#" method="post">
@@ -519,8 +472,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 													<input type="hidden" name="cmd" value="_cart" />
 													<input type="hidden" name="add" value="1" />
 													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="fresh broccoli" />
-													<input type="hidden" name="amount" value="4.00" />
+													<input type="hidden" name="item_name" value="stainless steel dabba" />
+													<input type="hidden" name="amount" value="6.00" />
 													<input type="hidden" name="discount_amount" value="1.00" />
 													<input type="hidden" name="currency_code" value="USD" />
 													<input type="hidden" name="return" value=" " />
@@ -538,7 +491,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="clearfix"> </div>
 				</div>
 				<div class="w3ls_w3l_banner_nav_right_grid1">
-					<h6>beverages</h6>
+					<h6>Pet Food</h6>
 					<div class="col-md-3 w3ls_w3l_banner_left">
 						<div class="hover14 column">
 						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
@@ -549,8 +502,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="single.html"><img src="images/13.png" alt=" " class="img-responsive" /></a>
-											<p>mixed fruit juice (1 ltr)</p>
+											<a href="single.jsp"><img src="images/25.png" alt=" " class="img-responsive" /></a>
+											<p>food for adult dogs (80 gms)</p>
 											<h4>$3.00 <span>$4.00</span></h4>
 										</div>
 										<div class="snipcart-details">
@@ -559,7 +512,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 													<input type="hidden" name="cmd" value="_cart" />
 													<input type="hidden" name="add" value="1" />
 													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="mixed fruit juice" />
+													<input type="hidden" name="item_name" value="food for adult dogs" />
 													<input type="hidden" name="amount" value="3.00" />
 													<input type="hidden" name="discount_amount" value="1.00" />
 													<input type="hidden" name="currency_code" value="USD" />
@@ -585,9 +538,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="single.html"><img src="images/14.png" alt=" " class="img-responsive" /></a>
-											<p>prune juice - sunsweet (1 ltr)</p>
-											<h4>$4.00 <span>$5.00</span></h4>
+											<a href="single.jsp"><img src="images/26.png" alt=" " class="img-responsive" /></a>
+											<p>young adult dogs (1.2 kg)</p>
+											<h4>$6.00 <span>$10.00</span></h4>
 										</div>
 										<div class="snipcart-details">
 											<form action="#" method="post">
@@ -595,8 +548,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 													<input type="hidden" name="cmd" value="_cart" />
 													<input type="hidden" name="add" value="1" />
 													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="prune juice" />
-													<input type="hidden" name="amount" value="4.00" />
+													<input type="hidden" name="item_name" value="young adult dogs" />
+													<input type="hidden" name="amount" value="6.00" />
 													<input type="hidden" name="discount_amount" value="1.00" />
 													<input type="hidden" name="currency_code" value="USD" />
 													<input type="hidden" name="return" value=" " />
@@ -619,9 +572,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="single.html"><img src="images/15.png" alt=" " class="img-responsive" /></a>
-											<p>coco cola zero can (330 ml)</p>
-											<h4>$3.00 <span>$5.00</span></h4>
+											<a href="single.jsp"><img src="images/27.png" alt=" " class="img-responsive" /></a>
+											<p>cat food ocean fish (1.4 kg)</p>
+											<h4>$6.00 <span>$7.00</span></h4>
 										</div>
 										<div class="snipcart-details">
 											<form action="#" method="post">
@@ -629,8 +582,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 													<input type="hidden" name="cmd" value="_cart" />
 													<input type="hidden" name="add" value="1" />
 													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="coco cola can" />
-													<input type="hidden" name="amount" value="3.00" />
+													<input type="hidden" name="item_name" value="cat food ocean fish" />
+													<input type="hidden" name="amount" value="6.00" />
 													<input type="hidden" name="discount_amount" value="1.00" />
 													<input type="hidden" name="currency_code" value="USD" />
 													<input type="hidden" name="return" value=" " />
@@ -655,9 +608,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="single.html"><img src="images/16.png" alt=" " class="img-responsive" /></a>
-											<p>sprite bottle (2 ltr)</p>
-											<h4>$3.00 <span>$4.00</span></h4>
+											<a href="single.jsp"><img src="images/28.png" alt=" " class="img-responsive" /></a>
+											<p>chicken in jelly can (400 gm)</p>
+											<h4>$7.00 <span>$9.00</span></h4>
 										</div>
 										<div class="snipcart-details">
 											<form action="#" method="post">
@@ -665,8 +618,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 													<input type="hidden" name="cmd" value="_cart" />
 													<input type="hidden" name="add" value="1" />
 													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="sprite bottle" />
-													<input type="hidden" name="amount" value="3.00" />
+													<input type="hidden" name="item_name" value="chicken in jelly can" />
+													<input type="hidden" name="amount" value="7.00" />
 													<input type="hidden" name="discount_amount" value="1.00" />
 													<input type="hidden" name="currency_code" value="USD" />
 													<input type="hidden" name="return" value=" " />
@@ -710,29 +663,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-3 w3_footer_grid">
 				<h3>information</h3>
 				<ul class="w3_footer_grid_list">
-					<li><a href="events.html">Events</a></li>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="products.html">Best Deals</a></li>
-					<li><a href="services.html">Services</a></li>
-					<li><a href="short-codes.html">Short Codes</a></li>
+					<li><a href="events.jsp">Events</a></li>
+					<li><a href="about.jsp">About Us</a></li>
+					<li><a href="products.jsp">Best Deals</a></li>
+					<li><a href="services.jsp">Services</a></li>
+					<li><a href="short-codes.jsp">Short Codes</a></li>
 				</ul>
 			</div>
 			<div class="col-md-3 w3_footer_grid">
 				<h3>policy info</h3>
 				<ul class="w3_footer_grid_list">
-					<li><a href="faqs.html">FAQ</a></li>
-					<li><a href="privacy.html">privacy policy</a></li>
-					<li><a href="privacy.html">terms of use</a></li>
+					<li><a href="faqs.jsp">FAQ</a></li>
+					<li><a href="privacy.jsp">privacy policy</a></li>
+					<li><a href="privacy.jsp">terms of use</a></li>
 				</ul>
 			</div>
 			<div class="col-md-3 w3_footer_grid">
 				<h3>what in stores</h3>
 				<ul class="w3_footer_grid_list">
-					<li><a href="pet.html">Pet Food</a></li>
-					<li><a href="frozen.html">Frozen Snacks</a></li>
-					<li><a href="kitchen.html">Kitchen</a></li>
-					<li><a href="products.html">Branded Foods</a></li>
-					<li><a href="household.html">Households</a></li>
+					<li><a href="pet.jsp">Pet Food</a></li>
+					<li><a href="frozen.jsp">Frozen Snacks</a></li>
+					<li><a href="kitchen.jsp">Kitchen</a></li>
+					<li><a href="products.jsp">Branded Foods</a></li>
+					<li><a href="household.jsp">Households</a></li>
 				</ul>
 			</div>
 			<div class="col-md-3 w3_footer_grid">

@@ -1,10 +1,11 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
 <!--
 author: W3layouts
 author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
-<!DOCTYPE html>
 <html>
 <head>
 <title>Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Kitchen :: w3layouts</title>
@@ -44,7 +45,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- header -->
 	<div class="agileits_header">
 		<div class="w3l_offers">
-			<a href="products.html">Today's special Offers !</a>
+			<a href="products.jsp">Today's special Offers !</a>
 		</div>
 		<div class="w3l_search">
 			<form action="#" method="post">
@@ -68,8 +69,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="mega-dropdown-menu">
 						<div class="w3ls_vegetables">
 							<ul class="dropdown-menu drp-mnu">
-								<li><a href="login.html">Login</a></li> 
-								<li><a href="login.html">Sign Up</a></li>
+								<li><a href="login.jsp">Login</a></li> 
+								<li><a href="login.jsp">Sign Up</a></li>
 							</ul>
 						</div>                  
 					</div>	
@@ -77,7 +78,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</ul>
 		</div>
 		<div class="w3l_header_right1">
-			<h2><a href="mail.html">Contact Us</a></h2>
+			<h2><a href="mail.jsp">Contact Us</a></h2>
 		</div>
 		<div class="clearfix"> </div>
 	</div>
@@ -100,14 +101,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="logo_products">
 		<div class="container">
 			<div class="w3ls_logo_products_left">
-				<h1><a href="index.html"><span>Grocery</span> Store</a></h1>
+				<h1><a href="index.jsp"><span>Grocery</span> Store</a></h1>
 			</div>
 			<div class="w3ls_logo_products_left1">
 				<ul class="special_items">
-					<li><a href="events.html">Events</a><i>/</i></li>
-					<li><a href="about.html">About Us</a><i>/</i></li>
-					<li><a href="products.html">Best Deals</a><i>/</i></li>
-					<li><a href="services.html">Services</a></li>
+					<li><a href="events.jsp">Events</a><i>/</i></li>
+					<li><a href="about.jsp">About Us</a><i>/</i></li>
+					<li><a href="products.jsp">Best Deals</a><i>/</i></li>
+					<li><a href="services.jsp">Services</a></li>
 				</ul>
 			</div>
 			<div class="w3ls_logo_products_left1">
@@ -124,7 +125,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="products-breadcrumb">
 		<div class="container">
 			<ul>
-				<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a><span>|</span></li>
+				<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.jsp">Home</a><span>|</span></li>
 				<li>Kitchen</li>
 			</ul>
 		</div>
@@ -146,45 +147,45 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			   <!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav nav_1">
-						<li><a href="products.html">Branded Foods</a></li>
-						<li><a href="household.html">Households</a></li>
+						<li><a href="products.jsp">Branded Foods</a></li>
+						<li><a href="household.jsp">Households</a></li>
 						<li class="dropdown mega-dropdown active">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Veggies & Fruits<span class="caret"></span></a>				
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
 									<ul>	
-										<li><a href="vegetables.html">Vegetables</a></li>
-										<li><a href="vegetables.html">Fruits</a></li>
+										<li><a href="vegetables.jsp">Vegetables</a></li>
+										<li><a href="vegetables.jsp">Fruits</a></li>
 									</ul>
 								</div>                  
 							</div>				
 						</li>
-						<li><a href="kitchen.html">Kitchen</a></li>
-						<li><a href="short-codes.html">Short Codes</a></li>
+						<li><a href="kitchen.jsp">Kitchen</a></li>
+						<li><a href="short-codes.jsp">Short Codes</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Beverages<span class="caret"></span></a>
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
 									<ul>
-										<li><a href="drinks.html">Soft Drinks</a></li>
-										<li><a href="drinks.html">Juices</a></li>
+										<li><a href="drinks.jsp">Soft Drinks</a></li>
+										<li><a href="drinks.jsp">Juices</a></li>
 									</ul>
 								</div>                  
 							</div>	
 						</li>
-						<li><a href="pet.html">Pet Food</a></li>
+						<li><a href="pet.jsp">Pet Food</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Frozen Foods<span class="caret"></span></a>
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
 									<ul>
-										<li><a href="frozen.html">Frozen Snacks</a></li>
-										<li><a href="frozen.html">Frozen Nonveg</a></li>
+										<li><a href="frozen.jsp">Frozen Snacks</a></li>
+										<li><a href="frozen.jsp">Frozen Nonveg</a></li>
 									</ul>
 								</div>                  
 							</div>	
 						</li>
-						<li><a href="bread.html">Bread & Bakery</a></li>
+						<li><a href="bread.jsp">Bread & Bakery</a></li>
 					</ul>
 				 </div><!-- /.navbar-collapse -->
 			</nav>
@@ -250,29 +251,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<img src="images/22.jpg" alt=" " class="img-responsive" />
 						<h4>Bread & Bakery</h4>
 						<ul>
-							<li><a href="bread.html">Raising rolls</a></li>
-							<li><a href="bread.html">Butter Croissants</a></li>
-							<li><a href="bread.html">wheat pita</a></li>
-							<li><a href="bread.html">Hot dog roll</a></li>
+							<li><a href="bread.jsp">Raising rolls</a></li>
+							<li><a href="bread.jsp">Butter Croissants</a></li>
+							<li><a href="bread.jsp">wheat pita</a></li>
+							<li><a href="bread.jsp">Hot dog roll</a></li>
 						</ul>
 					</div>
 					<div class="col-md-4 w3ls_w3l_banner_nav_right_grid_head_grid">
 						<img src="images/23.jpg" alt=" " class="img-responsive" />
 						<h4>Beverages</h4>
 						<ul>
-							<li><a href="drinks.html">Juices</a></li>
-							<li><a href="drinks.html">Soft Drinks</a></li>
-							<li><a href="drinks.html">Energy Drinks</a></li>
+							<li><a href="drinks.jsp">Juices</a></li>
+							<li><a href="drinks.jsp">Soft Drinks</a></li>
+							<li><a href="drinks.jsp">Energy Drinks</a></li>
 						</ul>
 					</div>
 					<div class="col-md-4 w3ls_w3l_banner_nav_right_grid_head_grid">
 						<img src="images/24.jpg" alt=" " class="img-responsive" />
 						<h4>Frozen Foods</h4>
 						<ul>
-							<li><a href="frozen.html">Frozen Snacks</a></li>
-							<li><a href="frozen.html">Frozen Nonveg</a></li>
-							<li><a href="frozen.html">Frozen Sweet Corn</a></li>
-							<li><a href="frozen.html">Frozen Mixed Vegetable</a></li>
+							<li><a href="frozen.jsp">Frozen Snacks</a></li>
+							<li><a href="frozen.jsp">Frozen Nonveg</a></li>
+							<li><a href="frozen.jsp">Frozen Sweet Corn</a></li>
+							<li><a href="frozen.jsp">Frozen Mixed Vegetable</a></li>
 						</ul>
 					</div>
 					<div class="clearfix"> </div>
@@ -295,7 +296,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<figure>
 									<div class="snipcart-item block" >
 										<div class="snipcart-thumb">
-											<a href="single.html"><img title=" " alt=" " src="images/1.png" /></a>		
+											<a href="single.jsp"><img title=" " alt=" " src="images/1.png" /></a>		
 											<p>fortune sunflower oil</p>
 											<h4>$7.99 <span>$10.00</span></h4>
 										</div>
@@ -328,7 +329,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<figure>
 									<div class="snipcart-item block" >
 										<div class="snipcart-thumb">
-											<a href="single.html"><img title=" " alt=" " src="images/3.png" /></a>		
+											<a href="single.jsp"><img title=" " alt=" " src="images/3.png" /></a>		
 											<p>basmati rise (5 Kg)</p>
 											<h4>$11.99 <span>$15.00</span></h4>
 										</div>
@@ -364,7 +365,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="single.html"><img src="images/2.png" alt=" " class="img-responsive" /></a>
+											<a href="single.jsp"><img src="images/2.png" alt=" " class="img-responsive" /></a>
 											<p>Pepsi soft drink (2 Ltr)</p>
 											<h4>$8.00 <span>$10.00</span></h4>
 										</div>
@@ -400,7 +401,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="single.html"><img src="images/4.png" alt=" " class="img-responsive" /></a>
+											<a href="single.jsp"><img src="images/4.png" alt=" " class="img-responsive" /></a>
 											<p>dogs food (4 Kg)</p>
 											<h4>$9.00 <span>$11.00</span></h4>
 										</div>
@@ -453,29 +454,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-3 w3_footer_grid">
 				<h3>information</h3>
 				<ul class="w3_footer_grid_list">
-					<li><a href="events.html">Events</a></li>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="products.html">Best Deals</a></li>
-					<li><a href="services.html">Services</a></li>
-					<li><a href="short-codes.html">Short Codes</a></li>
+					<li><a href="events.jsp">Events</a></li>
+					<li><a href="about.jsp">About Us</a></li>
+					<li><a href="products.jsp">Best Deals</a></li>
+					<li><a href="services.jsp">Services</a></li>
+					<li><a href="short-codes.jsp">Short Codes</a></li>
 				</ul>
 			</div>
 			<div class="col-md-3 w3_footer_grid">
 				<h3>policy info</h3>
 				<ul class="w3_footer_grid_list">
-					<li><a href="faqs.html">FAQ</a></li>
-					<li><a href="privacy.html">privacy policy</a></li>
-					<li><a href="privacy.html">terms of use</a></li>
+					<li><a href="faqs.jsp">FAQ</a></li>
+					<li><a href="privacy.jsp">privacy policy</a></li>
+					<li><a href="privacy.jsp">terms of use</a></li>
 				</ul>
 			</div>
 			<div class="col-md-3 w3_footer_grid">
 				<h3>what in stores</h3>
 				<ul class="w3_footer_grid_list">
-					<li><a href="pet.html">Pet Food</a></li>
-					<li><a href="frozen.html">Frozen Snacks</a></li>
-					<li><a href="kitchen.html">Kitchen</a></li>
-					<li><a href="products.html">Branded Foods</a></li>
-					<li><a href="household.html">Households</a></li>
+					<li><a href="pet.jsp">Pet Food</a></li>
+					<li><a href="frozen.jsp">Frozen Snacks</a></li>
+					<li><a href="kitchen.jsp">Kitchen</a></li>
+					<li><a href="products.jsp">Branded Foods</a></li>
+					<li><a href="household.jsp">Households</a></li>
 				</ul>
 			</div>
 			<div class="col-md-3 w3_footer_grid">
