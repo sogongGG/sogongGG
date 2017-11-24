@@ -1,5 +1,5 @@
 ﻿<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+    pageEncoding="UTF-8"%>
 <!--
 author: W3layouts
 author URL: http://w3layouts.com
@@ -8,19 +8,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <html>
 <head>
-<title>Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Sign In & Sign Up :: w3layouts</title>
+<title>소공 5조-강산,치종,정훈</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Grocery Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+<meta name="keywords" content="Grocery Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link rel="icon" type="image/png"  href="/images/sg.ico"/>
 <!-- //for-mobile-apps -->
 <link href="css/bootstrap.css?ver=2" rel="stylesheet" type="text/css" media="all" />
 <link href="css/style.css?ver=2" rel="stylesheet" type="text/css" media="all" />
 <!-- font-awesome icons -->
-<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /> 
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
 <!-- //font-awesome icons -->
 <!-- js -->
 <script src="js/jquery-1.11.1.min.js"></script>
@@ -32,7 +33,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
+		$(".scroll").click(function(event){
 			event.preventDefault();
 			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 		});
@@ -40,7 +41,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </script>
 <!-- start-smoth-scrolling -->
 </head>
-	
+
 <body>
 <!-- header -->
 	<div class="agileits_header">
@@ -53,7 +54,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<input type="submit" value=" ">
 			</form>
 		</div>
-		<div class="product_list_header" style="padding-right: 2em;">  
+		<div class="product_list_header" style="padding-right: 2em;">
 			<form action="#" method="post" class="last">
                 <fieldset>
                     <input type="hidden" name="cmd" value="_cart" />
@@ -76,14 +77,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	$(document).ready(function() {
 		 var navoffeset=$(".agileits_header").offset().top;
 		 $(window).scroll(function(){
-			var scrollpos=$(window).scrollTop(); 
+			var scrollpos=$(window).scrollTop();
 			if(scrollpos >=navoffeset){
 				$(".agileits_header").addClass("fixed");
 			}else{
 				$(".agileits_header").removeClass("fixed");
 			}
 		 });
-		 
+
 	});
 	</script>
 <!-- //script-for sticky-nav -->
@@ -132,22 +133,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				  </button>
-			   </div> 
+			   </div>
 			   <!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav nav_1">
 						<li><a href="products.jsp">Branded Foods</a></li>
 						<li><a href="household.jsp">Households</a></li>
 						<li class="dropdown mega-dropdown active">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Veggies & Fruits<span class="caret"></span></a>				
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Veggies & Fruits<span class="caret"></span></a>
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
-									<ul>	
+									<ul>
 										<li><a href="vegetables.jsp">Vegetables</a></li>
 										<li><a href="vegetables.jsp">Fruits</a></li>
 									</ul>
-								</div>                  
-							</div>				
+								</div>
+							</div>
 						</li>
 						<li><a href="kitchen.jsp">Kitchen</a></li>
 						<li><a href="short-codes.jsp">Short Codes</a></li>
@@ -159,8 +160,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<li><a href="drinks.jsp">Soft Drinks</a></li>
 										<li><a href="drinks.jsp">Juices</a></li>
 									</ul>
-								</div>                  
-							</div>	
+								</div>
+							</div>
 						</li>
 						<li><a href="pet.jsp">Pet Food</a></li>
 						<li class="dropdown">
@@ -171,8 +172,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<li><a href="frozen.jsp">Frozen Snacks</a></li>
 										<li><a href="frozen.jsp">Frozen Nonveg</a></li>
 									</ul>
-								</div>                  
-							</div>	
+								</div>
+							</div>
 						</li>
 						<li><a href="bread.jsp">Bread & Bakery</a></li>
 					</ul>
@@ -234,7 +235,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				$('.toggle').click(function(){
 				  // Switches the Icon
 				  $(this).children('i').toggleClass('fa-pencil');
-				  // Switches the forms  
+				  // Switches the forms
 				  $('.form').animate({
 					height: "toggle",
 					'padding-top': 'toggle',
@@ -257,7 +258,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<i class="fa fa-shopping-cart" aria-hidden="true"></i>
 				</div>
 				<h3>Nam libero tempore</h3>
-				<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus 
+				<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus
 					saepe eveniet ut et voluptates repudiandae sint et.</p>
 			</div>
 			<div class="col-md-4 wthree_news_top_serv_btm_grid">
@@ -265,7 +266,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<i class="fa fa-bar-chart" aria-hidden="true"></i>
 				</div>
 				<h3>officiis debitis aut rerum</h3>
-				<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus 
+				<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus
 					saepe eveniet ut et voluptates repudiandae sint et.</p>
 			</div>
 			<div class="col-md-4 wthree_news_top_serv_btm_grid">
@@ -273,7 +274,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<i class="fa fa-truck" aria-hidden="true"></i>
 				</div>
 				<h3>eveniet ut et voluptates</h3>
-				<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus 
+				<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus
 					saepe eveniet ut et voluptates repudiandae sint et.</p>
 			</div>
 			<div class="clearfix"> </div>
@@ -370,14 +371,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="js/bootstrap.min.js"></script>
 <script>
 $(document).ready(function(){
-    $(".dropdown").hover(            
+    $(".dropdown").hover(
         function() {
             $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
-            $(this).toggleClass('open');        
+            $(this).toggleClass('open');
         },
         function() {
             $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
-            $(this).toggleClass('open');       
+            $(this).toggleClass('open');
         }
     );
 });
@@ -390,12 +391,12 @@ $(document).ready(function(){
 				containerID: 'toTop', // fading element id
 				containerHoverID: 'toTopHover', // fading element hover id
 				scrollSpeed: 1200,
-				easingType: 'linear' 
+				easingType: 'linear'
 				};
 			*/
-								
+
 			$().UItoTop({ easingType: 'easeOutQuart' });
-								
+
 			});
 	</script>
 <!-- //here ends scrolling icon -->
