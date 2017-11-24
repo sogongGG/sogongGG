@@ -64,11 +64,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </form>
 		</div>
 		<div class="form">
+      <fieldset>
 		<form action'#' method="post" style="padding-top: 0.5em; padding-bottom: 0.5em;">
 			<input type="text" name="Username" placeholder="Username" required=" ">
 			<input type="password" name="Password" placeholder="Password" required=" ">
 			<input type="submit" value="Login" style="padding-bottom: 1px;">
-		</form>
+      </fieldset>
+    </form>
 		</div>
 		<div class="clearfix"> </div>
 	</div>
