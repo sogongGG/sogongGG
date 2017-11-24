@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
+﻿<%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!--
 author: W3layouts
@@ -17,8 +17,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/bootstrap.css?ver=2" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css?ver=2" rel="stylesheet" type="text/css" media="all" />
 <!-- font-awesome icons -->
 <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /> 
 <!-- //font-awesome icons -->
@@ -44,41 +44,30 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 <!-- header -->
 	<div class="agileits_header">
-		<div class="w3l_offers">
-			<a href="products.jsp">Today's special Offers !</a>
+		<div class="w3l_offers" style="padding: 2px;">
+			<a href="products.html">5조 쇼핑몰</a>
 		</div>
-		<div class="w3l_search">
+		<div class="w3l_search" style="padding: 2px;">
 			<form action="#" method="post">
-				<input type="text" name="Product" value="Search a product..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
+				<input type="text" name="Product" value="물품 검색" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
 				<input type="submit" value=" ">
 			</form>
 		</div>
-		<div class="product_list_header">  
+		<div class="product_list_header" style="padding-right: 2em;">  
 			<form action="#" method="post" class="last">
                 <fieldset>
                     <input type="hidden" name="cmd" value="_cart" />
                     <input type="hidden" name="display" value="1" />
-                    <input type="submit" name="submit" value="View your cart" class="button" />
+                    <input type="submit" name="submit" value="장바구니 보기" class="button" />
                 </fieldset>
             </form>
 		</div>
-		<div class="w3l_header_right">
-			<ul>
-				<li class="dropdown profile_details_drop">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
-					<div class="mega-dropdown-menu">
-						<div class="w3ls_vegetables">
-							<ul class="dropdown-menu drp-mnu">
-								<li><a href="login.jsp">Login</a></li> 
-								<li><a href="login.jsp">Sign Up</a></li>
-							</ul>
-						</div>                  
-					</div>	
-				</li>
-			</ul>
-		</div>
-		<div class="w3l_header_right1">
-			<h2><a href="mail.jsp">Contact Us</a></h2>
+		<div class="form">
+		<form action'#' method="post" style="padding-top: 0.5em; padding-bottom: 0.5em;">
+			<input type="text" name="Username" placeholder="Username" required=" ">
+			<input type="password" name="Password" placeholder="Password" required=" ">
+			<input type="submit" value="Login" style="padding-bottom: 1px;">
+		</form>
 		</div>
 		<div class="clearfix"> </div>
 	</div>
@@ -193,13 +182,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="w3l_banner_nav_right">
 <!-- login -->
 		<div class="w3_login">
-			<h3>Sign In & Sign Up</h3>
+			<h3>Sign In &amp; Sign Up</h3>
 			<div class="w3_login_module">
 				<div class="module form-module">
 				  <div class="toggle"><i class="fa fa-times fa-pencil"></i>
 					<div class="tooltip">Click Me</div>
 				  </div>
-				  <div class="form">
+				  <div class="form" style="display: block;">
 					<h2>Login to your account</h2>
 					<form action="#" method="post">
 					  <input type="text" name="Username" placeholder="Username" required=" ">
@@ -207,13 +196,34 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					  <input type="submit" value="Login">
 					</form>
 				  </div>
-				  <div class="form">
-					<h2>Create an account</h2>
+				  <div class="form" style="display: none;">
+					<h2>회원정보를 입력하세요</h2>
 					<form action="#" method="post">
-					  <input type="text" name="Username" placeholder="Username" required=" ">
-					  <input type="password" name="Password" placeholder="Password" required=" ">
-					  <input type="email" name="Email" placeholder="Email Address" required=" ">
-					  <input type="text" name="Phone" placeholder="Phone Number" required=" ">
+					   <input type="text" name="Lastname" placeholder="*성" required=" ">
+					  <input type="text" name="Firstname" placeholder="*이름" required=" ">
+					  <h4> 생년월일을 입력하세요* </h4>
+					  <select name="Birth_month" style="margin-bottom: 1em;>
+						<option value="">생월선택</option>
+						<option value="1월">January</option>
+						<option value="2월">February</option>
+						<option value="3월">March</option>
+					  </select>
+					  <select name="Birth_day" style="margin-bottom: 1em;>
+						<option value="">생일선택</option>
+						<option value="1">1일</option>
+					  </select>
+					  <select name="Birth_year" style="margin-bottom: 1em;>
+						<option value="">생년선택</option>
+						<option value="2017">2017년</option>
+					  </select>
+					  <input type="text" name="ID" placeholder="*회원ID" required=" ">
+					  <input type="password" name="Password" placeholder="*비밀번호" required=" ">
+					  <h2> 배송지 </h2>
+					  <input type="email" name="E-mail" placeholder="E-Mail" required=" ">
+					  <input type="text" name="Homenum" placeholder="집전화번호" required=" ">
+					  <input type="password" name="Phonenum" placeholder="휴대전화번호" required=" ">
+					  <input type="text" name="Postnum" placeholder="우편번호" required=" ">
+					  <input type="text" name="Address" placeholder="상세주소" required=" ">
 					  <input type="submit" value="Register">
 					</form>
 				  </div>

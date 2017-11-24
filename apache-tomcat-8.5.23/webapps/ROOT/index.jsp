@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
+﻿<%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!--
 author: W3layouts
@@ -17,8 +17,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/bootstrap.css?ver=1" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css?ver=1" rel="stylesheet" type="text/css" media="all" />
 <!-- font-awesome icons -->
 <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /> 
 <!-- //font-awesome icons -->
@@ -45,40 +45,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- header -->
 	<div class="agileits_header">
 		<div class="w3l_offers">
-			<a href="products.jsp">Today's special Offers !</a>
+			<a href="products.jsp">5조 쇼핑몰</a>
 		</div>
-		<div class="w3l_search">
+		<div class="w3l_search" style="padding: 2px;">
 			<form action="#" method="post">
-				<input type="text" name="Product" value="Search a product..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
+				<input type="text" name="Product" value="물품 검색" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
 				<input type="submit" value=" ">
 			</form>
 		</div>
-		<div class="product_list_header">  
+		<div class="product_list_header" style="padding-right: 2em;">  
 			<form action="#" method="post" class="last">
                 <fieldset>
                     <input type="hidden" name="cmd" value="_cart" />
                     <input type="hidden" name="display" value="1" />
-                    <input type="submit" name="submit" value="View your cart" class="button" />
+                    <input type="submit" name="submit" value="장바구니 보기" class="button" />
                 </fieldset>
             </form>
 		</div>
-		<div class="w3l_header_right">
-			<ul>
-				<li class="dropdown profile_details_drop">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
-					<div class="mega-dropdown-menu">
-						<div class="w3ls_vegetables">
-							<ul class="dropdown-menu drp-mnu">
-								<li><a href="login.jsp">Login</a></li> 
-								<li><a href="login.jsp">Sign Up</a></li>
-							</ul>
-						</div>                  
-					</div>	
-				</li>
-			</ul>
-		</div>
-		<div class="w3l_header_right1">
-			<h2><a href="mail.jsp">Contact Us</a></h2>
+		<div class="form">
+		<form action'#' method="post" style="padding-top: 0.5em; padding-bottom: 0.5em;">
+			<input type="text" name="Username" placeholder="Username" required=" ">
+			<input type="password" name="Password" placeholder="Password" required=" ">
+			<input type="submit" value="Login" style="padding-bottom: 1px;">
+		</form>
 		</div>
 		<div class="clearfix"> </div>
 	</div>
@@ -98,17 +87,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	});
 	</script>
 <!-- //script-for sticky-nav -->
-	<div class="logo_products">
+	<div class="logo_products" style="padding-top: 80px;">
 		<div class="container">
 			<div class="w3ls_logo_products_left">
 				<h1><a href="index.jsp"><span>Grocery</span> Store</a></h1>
 			</div>
 			<div class="w3ls_logo_products_left1">
 				<ul class="special_items">
-					<li><a href="events.jsp">Events</a><i>/</i></li>
-					<li><a href="about.jsp">About Us</a><i>/</i></li>
-					<li><a href="products.jsp">Best Deals</a><i>/</i></li>
-					<li><a href="services.jsp">Services</a></li>
+					<li><a href="events.jsp">모든 상품</a><i>/</i></li>
+					<li><a href="about.jsp">요리</a><i>/</i></li>
+					<li><a href="products.jsp">재료</a><i>/</i></li>
+					<li><a href="services.jsp">마트</a></li>
 				</ul>
 			</div>
 			<div class="w3ls_logo_products_left1">
@@ -229,36 +218,38 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="clearfix"></div>
 	</div>
 <!-- banner -->
-	<div class="banner_bottom">
-			<div class="wthree_banner_bottom_left_grid_sub">
-			</div>
-			<div class="wthree_banner_bottom_left_grid_sub1">
-				<div class="col-md-4 wthree_banner_bottom_left">
-					<div class="wthree_banner_bottom_left_grid">
-						<img src="images/4.jpg" alt=" " class="img-responsive" />
-						<div class="wthree_banner_bottom_left_grid_pos">
-							<h4>Discount Offer <span>25%</span></h4>
-						</div>
-					</div>
+	<div class="agileits_team_grids" style="padding-bottom: 1em;">
+		<h4> 5조 구성원 </h4>
+		<div class="col-md-4 agileits_team_grid">
+					<img src="images/32.jpg" alt=" " class="img-responsive">
+					<h4>Martin Paul</h4>
+					<p>Manager</p>
+					<ul class="agileits_social_icons agileits_social_icons_team">
+						<li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+					</ul>
 				</div>
-				<div class="col-md-4 wthree_banner_bottom_left">
-					<div class="wthree_banner_bottom_left_grid">
-						<img src="images/5.jpg" alt=" " class="img-responsive" />
-						<div class="wthree_banner_btm_pos">
-							<h3>introducing <span>best store</span> for <i>groceries</i></h3>
-						</div>
-					</div>
+				<div class="col-md-4 agileits_team_grid">
+					<img src="images/33.jpg" alt=" " class="img-responsive">
+					<h4>Michael Rick</h4>
+					<p>Supervisor</p>
+					<ul class="agileits_social_icons agileits_social_icons_team">
+						<li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+					</ul>
 				</div>
-				<div class="col-md-4 wthree_banner_bottom_left">
-					<div class="wthree_banner_bottom_left_grid">
-						<img src="images/6.jpg" alt=" " class="img-responsive" />
-						<div class="wthree_banner_btm_pos1">
-							<h3>Save <span>Upto</span> $10</h3>
-						</div>
-					</div>
+				<div class="col-md-4 agileits_team_grid">
+					<img src="images/34.jpg" alt=" " class="img-responsive">
+					<h4>Thomas Carl</h4>
+					<p>Supervisor</p>
+					<ul class="agileits_social_icons agileits_social_icons_team">
+						<li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+					</ul>
 				</div>
-				<div class="clearfix"> </div>
-			</div>
 			<div class="clearfix"> </div>
 	</div>
 <!-- top-brands -->
