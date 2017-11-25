@@ -1,11 +1,7 @@
 ﻿<%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="UTF-8"%>
-<!--
-author: W3layouts
-author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+<%@ page import = "java.sql.*" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <title>소공 5조-강산,치종,정훈</title>
@@ -42,7 +38,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- start-smoth-scrolling -->
 </head>
 
-
+<script>openDaumPostcode();</script>
 <body>
 <!-- header -->
 	<div class="agileits_header">
@@ -200,39 +196,41 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				  </div>
 				  <div class="form" style="display: none;">
 					<h2>회원가입을 환영합니다!</h2>
-					<form action="#" method="post">
+					<form name = "registerUser" action="register.jsp" method="post">
 					<h2>아이디</h2>
-					  <input type="text" name="ID" placeholder="*회원ID" required=" "><br>
+					  <input type="text" name="ID" id="ID" placeholder="*회원ID" required=" "><br>
 					  <h2>비밀번호</h2>
-					  <input type="password" name="Password" placeholder="*비밀번호" required=" ">
-					  <input type="password" name="Password" placeholder="*비밀번호확인" required=" "><br>
+					  <input type="password" name="Password" id="Password" placeholder="*비밀번호" required=" ">
+					  <input type="password" name="twicePassword" id="twicepassword" placeholder="*비밀번호확인" required=" "><br>
 					  <h2> 이름</h2>
-					   <input type="text" name="Lastname" placeholder="*성" required=" ">
-					  <input type="text" name="Firstname" placeholder="*이름" required=" "><br>
+					   <input type="text" name="Lastname" id="Lastname" placeholder="*성" required=" ">
+					  <input type="text" name="Firstname" id="Firstname" placeholder="*이름" required=" "><br>
 					  <h2> 생년월일을 입력하세요</h2>
-					  <select name="year">
+					  <select name="year" id="year">
 					  <%for(int year = 1980; year <= 2017; year++){ %>
 					  <option value="<%=year%>"> <%=year %> </option>
 					  <%} %>
 					  </select>년
-					   <select name="month">
+					   <select name="month" id="month">
 					  <%for(int month = 1; month <= 12; month++){ %>
 					  <option value="<%=month%>"> <%=month %> </option>
 					  <%} %>
 					  </select>일
-					  <select name="day">
+					  <select name="day" id="day">
 					  <%for(int day = 1; day <= 31; day++){ %>
 					  <option value="<%=day%>"> <%=day %> </option>
 					  <%} %>
 					  </select>일<br><br>
 					  <h2> 이메일 </h2>
-					  <input type="email" name="E-mail" placeholder="E-Mail" required=" "><br>
+					  <input type="email" name="Email" id="Email" placeholder="Email" required=" "><br>
 					  <h2> 전화번호 </h2>
-					  <input type="text" name="Homenum" placeholder="집전화번호" required=" ">
-					  <input type="password" name="Phonenum" placeholder="휴대전화번호" required=" "><br>
+					  <input type="text" name="Homenum" id="Homenum" placeholder="집전화번호" required=" ">
+					  <input type="password" name="Phonenum" id="Phonenum" placeholder="휴대전화번호" required=" "><br>
 					  <h2> 배송지 </h2>
-					  <input type="text" name="Postnum" placeholder="우편번호" required=" ">
-					  <input type="text" name="Address" placeholder="상세주소" required=" ">
+					  <input id="post1" readonly="" size="5" name="post1"> - <input id="post2" readonly="" size="5" name="post2">
+					  <input onclick="openDaumPostcode()" type="button" value="우편번호찾기"><br>
+					  <input id="addr1" readonly="" size="40" name="addr1" placeholder="도로명주소"><br>
+					  <input id="addr2" size="40" name="addr2" placeholder="지번주소">
 					  <input type="submit" value="Register">
 					</form>
 				  </div>
