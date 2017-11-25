@@ -66,12 +66,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="form">
       <fieldset>
 		<form action'#' method="post" style="margin-top: 15px;">
-			<input type="text" name="Username" placeholder="Username" required=" ">
-			<input type="password" name="Password" placeholder="Password" required=" ">
-			<input type="submit" value="Login" style="padding-bottom: 1px;">
-        <a href="login.jsp" style="margin-left: 1em;"> Register Now! </a>
+		<div class ="indexlogin"><a href="login.jsp">Login</a>
+		</div>
+		</form>
       </fieldset>
-    </form>
 		</div>
 		<div class="clearfix"> </div>
 	</div>

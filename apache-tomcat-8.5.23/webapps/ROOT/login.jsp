@@ -44,7 +44,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 <!-- header -->
 	<div class="agileits_header">
-		<div class="w3l_offers" style="padding: 2px;">
+		<div class="w3l_offers" style="margin-top: 8px;">
 			<a href="products.html">5조 쇼핑몰</a>
 		</div>
 		<div class="w3l_search" style="padding: 2px;">
@@ -63,11 +63,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </form>
 		</div>
 		<div class="form">
-		<form action'#' method="post" style="padding-top: 0.5em; padding-bottom: 0.5em;">
-			<input type="text" name="Username" placeholder="Username" required=" ">
-			<input type="password" name="Password" placeholder="Password" required=" ">
-			<input type="submit" value="Login" style="padding-bottom: 1px;">
+		<fieldset>
+		<form action'#' method="post" style="margin-top: 15px;">
+		<div class ="indexlogin"><a href="login.jsp">Login</a>
+		</div>
 		</form>
+      </fieldset>
 		</div>
 		<div class="clearfix"> </div>
 	</div>

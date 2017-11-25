@@ -1,9 +1,4 @@
-/*--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
+
 html, body{
     font-size: 100%;
 	font-family: 'Open Sans', sans-serif;
@@ -86,10 +81,11 @@ input[type="submit"],#PPMiniCart .minicart-submit,.w3ls_vegetables ul li a,input
 }
 .w3l_offers a{
 	font-size: 1.2em;
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
-    padding: .5em 3em;
-    background: #32a2e4;
+    padding: 0.5em 0.5em;
+    margin : 4px 2px 2px 18px;
+    background: #fff0aa;
 	display:block;
 }
 .w3l_search{
@@ -99,21 +95,19 @@ input[type="submit"],#PPMiniCart .minicart-submit,.w3ls_vegetables ul li a,input
 }
 .w3l_search input[type="text"]{
 	outline: none;
-    padding: 10px;
+    padding: 14px;
     color: #212121;
-    font-size: 14px;
+    font-size: 16px;
     width: 85%;
     background: #fff;
-    border: 1px solid #999;
+    border: 1px solid #fff0aa;
     float: left;
 }
 .w3l_search input[type="submit"]{
 	outline: none;
-    padding: 10px 0 9px;
-    width: 15%;
-    border: 1px solid;
-    position: relative;
-    background: url(../images/img-sp.png) no-repeat 14px 5px #337ab7;
+    padding: 1em 1em 1em 1em;
+    border: 1px solid #fff0aa;
+    background: url(../images/img-sp.png) no-repeat 10px 10px #fff0aa;
 }
 .w3l_search input[type="submit"]:hover{
     background: url(../images/img-sp.png) no-repeat 14px 5px #999;
@@ -584,6 +578,23 @@ ul.dropdown-menu.drp-mnu li a i {
     margin: .35em 0 0;
     background: url(../images/cart.png) no-repeat 116px 9px;
 }
+.indexlogin{
+	background: #fff0aa;
+    width: 100px;
+    text-decoration: none;
+    padding : 8px 0px 8px 0px;
+    margin : 0px 2px 8px 6px;
+    color: #804000;
+    text-align: center;
+    font-size: 1.2em;
+	display:block;
+}
+.indexlogin a {
+    color: #fff;
+    padding : 8px 0px 8px 0px;
+    text-decoration: none;
+    font-size: 20px;
+}
 #PPMiniCart form {
     width: 590px !important;
 	padding: 10px 20px 40px !important;
@@ -669,6 +680,7 @@ ul.dropdown-menu.drp-mnu li a i {
   border-color: #66afe9;
   outline: 0;
 }
+
 .agileits_w3layouts_tab2 input[type="submit"] {
     display: block;
     position: relative;
@@ -2825,6 +2837,7 @@ input.checkbox:checked:after {
     font-size: 1em;
 }
 /*-- //login --*/
+
 .findpostnum {
     background-color: #4CAF50; /* Green */
     border: none;
@@ -3000,7 +3013,7 @@ input.checkbox:checked:after {
 		width: 30%;
 	}
 	.w3l_search input[type="submit"] {
-		background: url(../images/img-sp.png) no-repeat 6px 5px #337ab7;
+		background: url(../images/img-sp.png) no-repeat 6px 5px #fff0aa;
 	}
 	.w3l_search input[type="submit"]:hover {
 		background: url(../images/img-sp.png) no-repeat 6px 5px #999;
@@ -3497,7 +3510,7 @@ input.checkbox:checked:after {
 		margin: .1em 0 0em 1em;
 	}
 	.w3l_search input[type="submit"] {
-		background: url(../images/img-sp.png) no-repeat 0px 5px #337ab7;
+		background: url(../images/img-sp.png) no-repeat 0px 5px #fff0aa;
 		width: 18%;
 	}
 	.w3l_search input[type="submit"]:hover {
@@ -3739,7 +3752,7 @@ input.checkbox:checked:after {
 		padding-left: 6.5em;
 	}
 	.w3l_search input[type="submit"] {
-		background: url(../images/img-sp.png) no-repeat 10px 5px #337ab7;
+		background: url(../images/img-sp.png) no-repeat 10px 5px #fff0aa;
 	}
 	.w3l_search input[type="submit"]:hover {
 		background: url(../images/img-sp.png) no-repeat 10px 5px #999;
@@ -3984,7 +3997,7 @@ input.checkbox:checked:after {
 		font-size: 13px;
 	}
 	.w3l_search input[type="submit"] {
-		background: url(../images/img-sp.png) no-repeat 0px 3px #337ab7;
+		background: url(../images/img-sp.png) no-repeat 0px 3px #fff0aa;
 		padding: 8px 0 9.9px;
 	}
 	.w3l_search input[type="submit"]:hover {
@@ -4423,7 +4436,7 @@ input.checkbox:checked:after {
 		width: 100%;
 	}
 	.w3l_search input[type="submit"] {
-		background: url(../images/img-sp.png) no-repeat 17px 3px #337ab7;
+		background: url(../images/img-sp.png) no-repeat 17px 3px #fff0aa;
 		padding: 8px 0 8.9px;
 	}
 	.more {
@@ -4560,7 +4573,7 @@ input.checkbox:checked:after {
 		width: 42%;
 	}
 	.w3l_search input[type="submit"] {
-		background: url(../images/img-sp.png) no-repeat 11px 3px #337ab37;
+		background: url(../images/img-sp.png) no-repeat 11px 3px #fff0aa;
 	}
 	.w3l_search input[type="submit"]:hover {
 		background: url(../images/img-sp.png) no-repeat 11px 3px #999;
