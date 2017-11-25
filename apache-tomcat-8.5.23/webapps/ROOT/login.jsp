@@ -42,6 +42,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- start-smoth-scrolling -->
 </head>
 
+
 <body>
 <!-- header -->
 	<div class="agileits_header">
@@ -198,37 +199,45 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</form>
 				  </div>
 				  <div class="form" style="display: none;">
-					<h2>회원정보를 입력하세요</h2>
+					<h2>회원가입을 환영합니다!</h2>
 					<form action="#" method="post">
-					   <input type="text" name="Lastname" placeholder="*성" required=" ">
-					  <input type="text" name="Firstname" placeholder="*이름" required=" ">
-					  <h4> 생년월일을 입력하세요* </h4>
-					  <select name="Birth_month" style="margin-bottom: 1em;>
-						<option value="">생월선택</option>
-						<option value="1월">January</option>
-						<option value="2월">February</option>
-						<option value="3월">March</option>
-					  </select>
-					  <select name="Birth_day" style="margin-bottom: 1em;>
-						<option value="">생일선택</option>
-						<option value="1">1일</option>
-					  </select>
-					  <select name="Birth_year" style="margin-bottom: 1em;>
-						<option value="">생년선택</option>
-						<option value="2017">2017년</option>
-					  </select>
-					  <input type="text" name="ID" placeholder="*회원ID" required=" ">
+					<h2>아이디</h2>
+					  <input type="text" name="ID" placeholder="*회원ID" required=" "><br>
+					  <h2>비밀번호</h2>
 					  <input type="password" name="Password" placeholder="*비밀번호" required=" ">
-					  <h2> 배송지 </h2>
-					  <input type="email" name="E-mail" placeholder="E-Mail" required=" ">
+					  <input type="password" name="Password" placeholder="*비밀번호확인" required=" "><br>
+					  <h2> 이름</h2>
+					   <input type="text" name="Lastname" placeholder="*성" required=" ">
+					  <input type="text" name="Firstname" placeholder="*이름" required=" "><br>
+					  <h2> 생년월일을 입력하세요</h2>
+					  <select name="year">
+					  <%for(int year = 1980; year <= 2017; year++){ %>
+					  <option value="<%=year%>"> <%=year %> </option>
+					  <%} %>
+					  </select>년
+					   <select name="month">
+					  <%for(int month = 1; month <= 12; month++){ %>
+					  <option value="<%=month%>"> <%=month %> </option>
+					  <%} %>
+					  </select>일
+					  <select name="day">
+					  <%for(int day = 1; day <= 31; day++){ %>
+					  <option value="<%=day%>"> <%=day %> </option>
+					  <%} %>
+					  </select>일<br><br>
+					  <h2> 이메일 </h2>
+					  <input type="email" name="E-mail" placeholder="E-Mail" required=" "><br>
+					  <h2> 전화번호 </h2>
 					  <input type="text" name="Homenum" placeholder="집전화번호" required=" ">
-					  <input type="password" name="Phonenum" placeholder="휴대전화번호" required=" ">
+					  <input type="password" name="Phonenum" placeholder="휴대전화번호" required=" "><br>
+					  <h2> 배송지 </h2>
 					  <input type="text" name="Postnum" placeholder="우편번호" required=" ">
 					  <input type="text" name="Address" placeholder="상세주소" required=" ">
 					  <input type="submit" value="Register">
 					</form>
 				  </div>
-				  <div class="cta"><a href="#">Forgot your password?</a></div>
+				  <div class="cta"><a href="#">아이디가 없으세요?<br>회원가입으로</a></div>
+				  <div class="cta"><a href="#">비밀번호를 잊으셨나요?</a></div>
 				</div>
 			</div>
 			<script>
