@@ -38,7 +38,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- start-smoth-scrolling -->
 </head>
 
-<script>openDaumPostcode();</script>
+<script src = "http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+<script src = "js/findaddress.js" language = "javascript">openDaumPostcode();</script>
+
 <body>
 <!-- header -->
 	<div class="agileits_header">
@@ -228,7 +230,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					  <input type="password" name="Phonenum" id="Phonenum" placeholder="휴대전화번호" required=" "><br>
 					  <h2> 배송지 </h2>
 					  <input id="post1" readonly="" size="5" name="post1"> - <input id="post2" readonly="" size="5" name="post2">
-					  <input onclick="openDaumPostcode()" type="button" value="우편번호찾기"><br>
+					  <input type="button" value="우편번호찾기"  onclick="openDaumPostcode();"><br>
 					  <input id="addr1" readonly="" size="40" name="addr1" placeholder="도로명주소"><br>
 					  <input id="addr2" size="40" name="addr2" placeholder="지번주소">
 					  <input type="submit" value="Register">

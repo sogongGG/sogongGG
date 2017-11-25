@@ -34,11 +34,10 @@ function openDaumPostcode() {
             document.getElementById("post2").value = data.postcode2;
             document.getElementById("addr1").value = fullRoadAddr;
             document.getElementById("addr2").value = data.jibunAddress;
- 
             document.getElementById('addr2').focus();
         }
     }).open({
-        left : (window.screen.width / 2) - (width / 2), //팝업창이 실행될때 위치지정
+    	left : (window.screen.width / 2) - (width / 2), //팝업창이 실행될때 위치지정
         top : (window.screen.height / 2) - (height / 2) //팝업창이 실행될때 위치지정
     });
 }
