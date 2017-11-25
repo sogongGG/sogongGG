@@ -226,13 +226,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					  <h2> 이메일 </h2>
 					  <input type="email" name="Email" id="Email" placeholder="Email" required=" "><br>
 					  <h2> 전화번호 </h2>
-					  <input type="text" name="Homenum" id="Homenum" placeholder="집전화번호" required=" ">
-					  <input type="password" name="Phonenum" id="Phonenum" placeholder="휴대전화번호" required=" "><br>
+					  <input type="text" name="Homenum" id="Homenum" placeholder="*집전화번호(-제외)" required=" ">
+					  <input type="password" name="Phonenum" id="Phonenum" placeholder="*휴대전화번호(-제외)" required=" "><br>
 					  <h2> 배송지 </h2>
 					  <input id="post1" readonly="" size="5" name="post1"> - <input id="post2" readonly="" size="5" name="post2">
-					  <input type="button" value="우편번호찾기"  onclick="openDaumPostcode();"><br>
-					  <input id="addr1" readonly="" size="40" name="addr1" placeholder="도로명주소"><br>
-					  <input id="addr2" size="40" name="addr2" placeholder="지번주소">
+					  <input class = "findpostnum" type="button" value="우편번호찾기" onclick="openDaumPostcode();"><br>
+					  <input id="addr1" border-color = "gray" readonly="" size="31" name="addr1" placeholder="*도로명주소">
+					  <input id="addr2" readonly="" size="31" name="addr2" placeholder="*지번주소">
+					  <input id="addr3" size="31" name="addr3" placeholder="*상세주소">
 					  <input type="submit" value="Register">
 					</form>
 				  </div>

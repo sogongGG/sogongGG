@@ -2825,6 +2825,20 @@ input.checkbox:checked:after {
     font-size: 1em;
 }
 /*-- //login --*/
+.findpostnum {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    margin : 0px 0px 5px 20px;
+    width : 125px;
+    height : 30px;
+    fond-size : 20px;
+    color: white;
+    padding: 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+}
 /*-----start-responsive-design------*/
 @media (max-width:1680px){
 	.snipcart-details {
