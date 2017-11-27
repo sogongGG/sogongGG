@@ -54,24 +54,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<input type="submit" value=" ">
 			</form>
 		</div>
-		<div class="product_list_header" style="padding-right: 2em;margin-top: 8px;">
+		<div class="product_list_header" style="padding: 6px, 2em, 6px 4px; margin-top: 10px;">
 			<form action="#" method="post" class="last">
                 <fieldset>
-                    <input type="hidden" name="cmd" value="_cart" />
-                    <input type="hidden" name="display" value="1" />
                     <input type="submit" name="submit" value="장바구니 보기" class="button" />
                 </fieldset>
             </form>
 		</div>
 		<div class="form">
       <fieldset>
-		<form action'#' method="post" style="margin-top: 15px;">
-			<input type="text" name="Username" placeholder="Username" required=" ">
-			<input type="password" name="Password" placeholder="Password" required=" ">
-			<input type="submit" value="Login" style="padding-bottom: 1px;">
-        <a href="login.jsp" style="margin-left: 1em;"> Register Now! </a>
+		<form action'#' method="post">
+		<div class ="indexlogin"><a href="login.jsp">Login</a>
+		</div>
+		</form>
       </fieldset>
-    </form>
 		</div>
 		<div class="clearfix"> </div>
 	</div>
@@ -105,8 +101,57 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</ul>
 			</div>
 			<div class="w3ls_logo_products_left1">
+        <!-- 역 지오 코딩-->
+
+          <script type="text/javascript" charset="utf-8">
+        /*
+          navigator.geolocation.getCurrentPosition(
+          function initMap(position) {
+              console.log('location load');
+            var uluru = {lat: position.coords.latitude, lng:position.coords.longitude};
+            var geocoder = new google.maps.Geocoder;
+            geocodeLatLng(geocoder,uluru);
+          });
+          */
+          function initMap() {
+        }
+          function getLocation() {
+            if (navigator.geolocation) {
+              navigator.geolocation.getCurrentPosition(onSuccess, onError);
+            }
+          }
+          function onError(error) {
+            alert('code: '    + error.code    + '\n' +
+            'message: ' + error.message + '\n');
+        }
+          function onSuccess(position) {
+            var uluru = {lat: position.coords.latitude, lng:position.coords.longitude};
+            var geocoder = new google.maps.Geocoder;
+           geocodeLatLng(geocoder,uluru);
+        }
+          function geocodeLatLng(geocoder,uluru) {
+            var latlng = uluru;
+            geocoder.geocode({'location': latlng}, function(results, status) {
+              if (status === 'OK') {
+                if (results[1]) {
+                  document.getElementById("now_location").innerHTML =" "+ results[1].formatted_address;
+                } else {
+                  document.getElementById("now_location").innerHTML = "위치를 찾을수 없습니다.";
+                }
+              } else {
+                document.getElementById("now_location").innerHTML ="위치확인이 불가합니다.";
+              }
+            });
+          }
+        </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoJWfF7bE_v8AWgcksE52yTbQFoJ6jBPI&callback=initMap">
+        </script>
+
+        <!-- -->
 				<ul class="phone_email">
-					<li><i class="fa fa-phone" aria-hidden="true"></i>(+0123) 234 567</li>
+          <a class="btn" href="#">
+					<li><i class="fa fa-map-marker" aria-hidden="true" id="now_location" onclick="getLocation()">&nbsp;&nbsp;&nbsp;현재위치 확인</i></li></a>
 					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:store@grocery.com">store@grocery.com</a></li>
 				</ul>
 			</div>

@@ -1,4 +1,4 @@
-﻿<%@ page language="java" contentType="text/html; charset=EUC-KR"
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="UTF-8"%>
 <%@ page import = "java.sql.*" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -44,7 +44,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 <!-- header -->
 	<div class="agileits_header">
-		<div class="w3l_offers" style="margin-top: 8px;">
+		<div class="w3l_offers" style="padding: 2px;">
 			<a href="products.html">5조 쇼핑몰</a>
 		</div>
 		<div class="w3l_search" style="padding: 2px;">
@@ -63,12 +63,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </form>
 		</div>
 		<div class="form">
-		<fieldset>
-		<form action'#' method="post" style="margin-top: 15px;">
-		<div class ="indexlogin"><a href="login.jsp">Login</a>
-		</div>
+		<form action'#' method="post" style="padding-top: 0.5em; padding-bottom: 0.5em;">
+			<input type="text" name="Username" placeholder="Username" required=" ">
+			<input type="password" name="Password" placeholder="Password" required=" ">
+			<input type="submit" value="Login" style="padding-bottom: 1px;">
 		</form>
-      </fieldset>
 		</div>
 		<div class="clearfix"> </div>
 	</div>
@@ -181,82 +180,56 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</nav>
 		</div>
 		<div class="w3l_banner_nav_right">
-<!-- login -->
-		<div class="w3_login">
-			<h3>Sign In &amp; Sign Up</h3>
-			<div class="w3_login_module">
-				<div class="module form-module">
-				  <div class="toggle"><i class="fa fa-times fa-pencil" style="margin-top: 10px;"></i>
-					<div class="tooltip">Click Me</div>
-				  </div>
-				  <div class="form" style="display: block;">
-					<h2>Login to your account</h2>
-					<form action="#" method="post">
-					  <input type="text" name="Username" placeholder="Username" required=" ">
-					  <input type="password" name="Password" placeholder="Password" required=" ">
-					  <input type="submit" value="Login">
-					</form>
-				  </div>
-				  <div class="form" style="display: none;">
-					<h2>회원가입을 환영합니다!</h2>
-					<form name = "registerUser" action="register.jsp" method="post">
-					<h2>아이디</h2>
-					  <input type="text" name="ID" id="ID" placeholder="*회원ID" required=" "><br>
-					  <h2>비밀번호</h2>
-					  <input type="password" name="Password" id="Password" placeholder="*비밀번호" required=" ">
-					  <input type="password" name="twicePassword" id="twicepassword" placeholder="*비밀번호확인" required=" "><br>
-					  <h2> 이름</h2>
-					   <input type="text" name="Lastname" id="Lastname" placeholder="*성" required=" ">
-					  <input type="text" name="Firstname" id="Firstname" placeholder="*이름" required=" "><br>
-					  <h2> 생년월일을 입력하세요</h2>
-					  <select name="year" id="year">
-					  <%for(int year = 1980; year <= 2017; year++){ %>
-					  <option value="<%=year%>"> <%=year %> </option>
-					  <%} %>
-					  </select>년
-					   <select name="month" id="month">
-					  <%for(int month = 1; month <= 12; month++){ %>
-					  <option value="<%=month%>"> <%=month %> </option>
-					  <%} %>
-					  </select>일
-					  <select name="day" id="day">
-					  <%for(int day = 1; day <= 31; day++){ %>
-					  <option value="<%=day%>"> <%=day %> </option>
-					  <%} %>
-					  </select>일<br><br>
-					  <h2> 이메일 </h2>
-					  <input type="email" name="Email" id="Email" placeholder="Email" required=" "><br>
-					  <h2> 전화번호 </h2>
-					  <input type="text" name="Homenum" id="Homenum" placeholder="*집전화번호(-제외)" required=" ">
-					  <input type="password" name="Phonenum" id="Phonenum" placeholder="*휴대전화번호(-제외)" required=" "><br>
-					  <h2> 배송지 </h2>
-					  <input id="post1" readonly="" size="5" name="post1"> - <input id="post2" readonly="" size="5" name="post2">
-					  <input class = "findpostnum" type="button" value="우편번호찾기" onclick="openDaumPostcode();"><br>
-					  <input id="addr1" border-color = "gray" readonly="" size="31" name="addr1" placeholder="*도로명주소">
-					  <input id="addr2" readonly="" size="31" name="addr2" placeholder="*지번주소">
-					  <input id="addr3" size="31" name="addr3" placeholder="*상세주소">
-					  <input type="submit" value="Register">
-					</form>
-				  </div>
-				  <div class="cta"><a href="#">아이디가 없으세요?<br>회원가입으로</a></div>
-				  <div class="cta"><a href="#">비밀번호를 잊으셨나요?</a></div>
-				</div>
-			</div>
-			<script>
-				$('.toggle').click(function(){
-				  // Switches the Icon
-				  $(this).children('i').toggleClass('fa-pencil');
-				  // Switches the forms
-				  $('.form').animate({
-					height: "toggle",
-					'padding-top': 'toggle',
-					'padding-bottom': 'toggle',
-					opacity: "toggle"
-				  }, "slow");
-				});
-			</script>
-		</div>
-<!-- //login -->
+<%
+request.setCharacterEncoding("euc-kr");
+String ID=request.getParameter("ID");
+String Password=request.getParameter("Password");
+String Lastname=request.getParameter("Lastname");
+String Firstname=request.getParameter("Firstname");
+String year=request.getParameter("year");
+String month=request.getParameter("month");
+String day=request.getParameter("day");
+String Email=request.getParameter("Email");
+String Home=request.getParameter("Homenum");
+String Phone=request.getParameter("Phonenum");
+int Homenum = Integer.parseInt(Home);
+int Phonenum = Integer.parseInt(Phone);
+String Postnum = request.getParameter("post1") + request.getParameter("post2");
+String addr1=request.getParameter("addr1");
+String addr2=request.getParameter("addr2");
+String addr3=request.getParameter("addr3");
+System.out.println(ID +Password+Lastname+Firstname+year+month+day+Email+Homenum+Phonenum+Postnum+addr1+addr2+addr3);
+Class.forName("com.mysql.jdbc.Driver");
+Connection myconn=null;
+myconn = DriverManager.getConnection("jdbc:mysql://localhost:3306/shoppingmall","root","LNiaMelo561248^*");
+//String q1="insert into info values('"+code+"','"+irum+"','"+cellphone+"')";
+String q1="insert into User values(?,?,?,?,?,?,?,?,?)";
+//Statement st=myconn.createStatement();
+PreparedStatement usertb=myconn.prepareStatement(q1);
+usertb.setString(1, ID);
+usertb.setString(2, Password);
+usertb.setString(3, Lastname);
+usertb.setString(4, Firstname);
+usertb.setInt(5, Phonenum);
+usertb.setString(6, Email);
+usertb.setString(7, day);
+usertb.setString(8, month);
+usertb.setString(9, year);
+//st.executeUpdate(q1);
+usertb.executeUpdate();
+
+String q2="insert into destination values(?,?,?,?,?,?)";
+PreparedStatement destinationtb=myconn.prepareStatement(q2);
+destinationtb.setString(1, ID);
+destinationtb.setInt(2, Homenum);
+destinationtb.setString(3, Postnum);
+destinationtb.setString(4, addr1);
+destinationtb.setString(5, addr2);
+destinationtb.setString(6, addr3);
+destinationtb.executeUpdate();
+
+
+%>
 		</div>
 		<div class="clearfix"></div>
 	</div>
