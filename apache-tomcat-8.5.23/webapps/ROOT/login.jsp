@@ -187,7 +187,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<h3>Sign In &amp; Sign Up</h3>
 			<div class="w3_login_module">
 				<div class="module form-module">
-				  <div class="toggle"><i class="fa fa-times fa-pencil"></i>
+				  <div class="toggle"><i class="fa fa-times fa-pencil" style="margin-top: 10px;"></i>
 					<div class="tooltip">Click Me</div>
 				  </div>
 				  <div class="form" style="display: block;">
