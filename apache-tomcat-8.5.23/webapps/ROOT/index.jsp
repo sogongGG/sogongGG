@@ -54,18 +54,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<input type="submit" value=" ">
 			</form>
 		</div>
-		<div class="product_list_header" style="padding-right: 2em;margin-top: 8px;">
+		<div class="product_list_header" style="padding: 6px, 2em, 6px 4px; margin-top: 10px;">
 			<form action="#" method="post" class="last">
                 <fieldset>
-                    <input type="hidden" name="cmd" value="_cart" />
-                    <input type="hidden" name="display" value="1" />
                     <input type="submit" name="submit" value="장바구니 보기" class="button" />
                 </fieldset>
             </form>
 		</div>
 		<div class="form">
       <fieldset>
-		<form action'#' method="post" style="margin-top: 15px;">
+		<form action'#' method="post">
 		<div class ="indexlogin"><a href="login.jsp">Login</a>
 		</div>
 		</form>
