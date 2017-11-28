@@ -192,23 +192,16 @@ $(function () {
     			<div class="tab_container">
         			<div id="tab1" class="tab_content">
             			<ul>
-                			<li><a href="#">이것은 두 번째 탭의</a>
-                			</li>
-                			<li><a href="#">이것은 두 번째 탭의</a>
-                			</li>
-                			<li><a href="#">이것은 두 번째 탭의</a>
-                			</li>
-                			<li><a href="#">이것은 두 번째 탭의</a>
-                			</li>
-                			<li><a href="#">이것은 두 번째 탭의</a>
-                			</li>
+                			
            			 	</ul>
         			</div>
         <!-- #tab1 -->
-        			<div id="tab2" class="tab_content">222
+        			<div id="tab2" class="tab_content">
+        			222
         			</div>
         <!-- #tab2 -->
-        			<div id="tab3" class="tab_content">333
+        			<div id="tab3" class="tab_content">
+        			333
         			</div>
         <!-- #tab3 -->
     			</div>

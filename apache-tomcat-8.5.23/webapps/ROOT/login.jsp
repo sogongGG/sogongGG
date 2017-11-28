@@ -223,9 +223,9 @@ function getResult(){
 				  </div>
 				  <div class="form" style="display: block;">
 					<h2>Login to your account</h2>
-					<form action="#" method="post">
-					  <input type="text" name="Username" placeholder="Username" required=" ">
-					  <input type="password" name="Password" placeholder="Password" required=" ">
+					<form name = "LoginWindow" action="verify.jsp" method="post">
+					  <input type="text" id = "LoginUsername" name="LoginUsername" placeholder="Username" required=" ">
+					  <input type="password" id = "LoginPassword" name="LoginPassword" placeholder="Password" required=" ">
 					  <input type="submit" value="Login">
 					</form>
 				  </div>
