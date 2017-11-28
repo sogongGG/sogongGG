@@ -176,62 +176,109 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- banner -->
 <div class="search">
   <div class="panel-group w3l_panel_group_faq" id="accordion" aria-multiselectable="true">
-
-			  <div class="panel panel-default" style="
-    width: 402px; display: inline-block
-">
-				<div class="panel-heading" role="tab" id="headingTwo">
-				  <h4 class="panel-title asd">
-					<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-					  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>Itaque earum rerum
-					</a>
-				  </h4>
-				</div>
-				<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false">
-				   <div class="panel-body panel_text">
-					Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
-				  </div>
-				</div>
-			  </div>
-			  <div class="panel panel-default" style="width: 402px; display: inline-block">
-				<div class="panel-heading" role="tab" id="headingThree">
-				  <h4 class="panel-title asd">
-					<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-					  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>autem accusamus terry quibusdam
-					</a>
-				  </h4>
-				</div>
-				<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
-				   <div class="panel-body panel_text">
-					Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
-				  </div>
-				</div>
-			  </div>
 			  <div class="panel panel-default">
 				<div class="panel-heading" role="tab" id="headingFour">
 				  <h4 class="panel-title asd">
-					<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-					  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>excepturi sint cliche reprehenderit
-					</a>
+					통합검색 결과
 				  </h4>
 				</div>
-				<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour" aria-expanded="false">
 				   <div class="panel-body panel_text">
-					Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
-				  </div>
-				</div>
-			  </div>
+
+<h3 style="text-align: left;"> 혹시 이것을 찾으시나요? </h3>
+<div class="col-md-3 w3ls_w3l_banner_left w3ls_w3l_banner_left_asdfdfd" style="padding-left: 0px; padding-right: 0px;>
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+											<a href="single.jsp"><img src="images/64.png" alt=" " class="img-responsive"></a>
+											<p>pepper salami (250 gm)</p>
+											<h4>$10.0</h4>
+										</div>
+										<div class="snipcart-details">
+											<form action="#" method="post">
+												<fieldset>
+													<input type="hidden" name="cmd" value="_cart">
+													<input type="hidden" name="add" value="1">
+													<input type="hidden" name="business" value=" ">
+													<input type="hidden" name="item_name" value="pepper salami">
+													<input type="hidden" name="amount" value="10.00">
+													<input type="hidden" name="discount_amount" value="1.00">
+													<input type="hidden" name="currency_code" value="USD">
+													<input type="hidden" name="return" value=" ">
+													<input type="hidden" name="cancel_return" value=" ">
+													<input type="submit" name="submit" value="Add to cart" class="button">
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+          <div class="col-md-3 w3ls_w3l_banner_left" style="padding-left: 0px;">
+          							<div class="agile_top_brand_left_grid1" style="backgroud: white;">
+          		              <h3 class=title style="font-size: small;"> 요리설명 </h3>
+                            "한국 요리(韓國料理, 문화어: 조선 료리)는 한국의 음식을 뜻한다. 복잡한 궁중 요리에서부터 지방의 특색 요리와 현대의 퓨전 요리에 이르기까지 재료와 조리법이 매우 다양하다. 전통적인 한국 정식은 밥, 국, 김치와 함께 나오는 많은 반찬들로 이루어진다. 한국 요리는 주로 쌀을 기반으로. 일반적으로 사용되는 성분 포함 참기름, 된장, 간장, 소금, 마늘, 생강, 다시마국물그리고 고추장 등으로 맛을 낸다. 김치는 거의 항상 모든 음식에서 제공된다. 식단은 계절별로 다양한데, 전통적으로 겨울 동안에는 마당에 구멍을 파고 땅 속에 묻어 놓은 장독에 저장된 김치와 그 밖에 절인 채소들에 많이 의존했다. 그러나 현재는 계절에 상관없이 대부분의 식단을 맛볼 수 있다."
+
+                            <h3 class=title style="font-size: small;"> 필요재료 </h3>
+                            <li style="display: inline-block;"> 재료1 </li>
+                            <li style="display: inline-block;"> 재료2 </li>
+                            <li style="display: inline-block;"> 재료3 </li>
+                            <li style="display: inline-block;"> 아주긴재료이름름름4 </li>
+          							</div>
+          						</div>
+                      <div class="col-md-3 w3ls_w31_banner_left_reviews" style="width: 20%">
+                        <div class="agile_top_brand_left_grid1" style="background: white;">
+                          <h3 class=title style="font-size: small;"> 네티즌 후기 </h3>
+                          <div class="list-group list-group-alternate" style="margin-bottom: 0px;">
+						                      <a href="#" class="list-group-item"> 후기1 </a>
+						                      <a href="#" class="list-group-item"> 후기2 </a>
+						                      <a href="#" class="list-group-item"> 후기3 </a>
+						                      <a href="#" class="list-group-item"> 후기4 </a>
+						                      <a href="#" class="list-group-item"> 후기5 </a>
+						                      <a href="#" class="list-group-item"> 후기6 </a>
+                          </div>
+					              </div>
+          		       </div>
+                     <div class="col-md-3 w3ls_w3l_banner_left" style="padding-left: 0px;">
+                        <h3 class=title style="font-size: small;"> 인근마트 </h3>
+                       <div id="map" style="width: 120%; height:300px; background-color: grey;"> </div>
+                       <script>
+                         function initMap() {
+                         var uluru = {lat:  37.561093, lng: 126.993539};
+                         var map = new google.maps.Map(document.getElementById('map'), {
+                         zoom: 15,
+                         center: uluru
+                         });
+                         var marker = new google.maps.Marker({
+                         position: uluru,
+                         map: map
+                         });
+                         }
+                       </script>
+                       <script async defer
+                         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCO-USh8Pt7yrfjEmuvjV1rQ5RxrLc-V7w&callback=initMap">
+                       </script>
+          				</div>
+                </div>
+			        </div>
 			   <div class="panel panel-default">
 				<div class="panel-heading" role="tab" id="headingFive">
 				  <h4 class="panel-title asd">
 					<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-					  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>dolorem eum fugiat quo voluptas nulla pariatur
+					  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>요리검색 결과
 					</a>
 				  </h4>
 				</div>
-				<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive" aria-expanded="false">
+				<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive" aria-expanded="false" style="height: 0px;">
 				   <div class="panel-body panel_text">
-					Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
+             <div class="col-md-3 w3ls_w3l_banner_left" style="padding-left: 0px;">
+             							<div class="agile_top_brand_left_grid1" style="backgroud: white;">
+             		              <h3 class=title style="font-size: small;"> 요리설명 </h3>
+                          </div>
+             </div>
 				  </div>
 				</div>
 			  </div>
@@ -239,7 +286,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="panel-heading" role="tab" id="headingSix">
 				  <h4 class="panel-title asd">
 					<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-					  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>terry eiusmod high life accusamus
+					  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>재료검색 결과
 					</a>
 				  </h4>
 				</div>
@@ -253,39 +300,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="panel-heading" role="tab" id="headingSeven">
 				  <h4 class="panel-title asd">
 					<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-					  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>quasi architecto beatae vitae dicta
+					  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>마트검색 결과
 					</a>
 				  </h4>
 				</div>
 				<div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven" aria-expanded="false">
-				   <div class="panel-body panel_text">
-					Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
-				  </div>
-				</div>
-			  </div>
-			   <div class="panel panel-default">
-				<div class="panel-heading" role="tab" id="headingEight">
-				  <h4 class="panel-title asd">
-					<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-					  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>iure reprehenderit qui in ea voluptate velit esse
-					</a>
-				  </h4>
-				</div>
-				<div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight" aria-expanded="false">
-				   <div class="panel-body panel_text">
-					Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
-				  </div>
-				</div>
-			  </div>
-			   <div class="panel panel-default">
-				<div class="panel-heading" role="tab" id="headingNine">
-				  <h4 class="panel-title asd">
-					<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-					  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>reprehenderit qui in ea voluptate velit esse quam nihil
-					</a>
-				  </h4>
-				</div>
-				<div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine" aria-expanded="false">
 				   <div class="panel-body panel_text">
 					Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
 				  </div>

@@ -75,6 +75,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                    </li>
                    <li style="display: inline-block;">
                      <input type="submit" value="Logout" style="padding-bottom: 1px;">
+                      
                      </li>
                    </ul>
                  </div>
