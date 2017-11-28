@@ -220,7 +220,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           <div class="col-md-3 w3ls_w3l_banner_left" style="padding-left: 0px;">
           							<div class="agile_top_brand_left_grid1" style="backgroud: white;">
           		              <h3 class=title style="font-size: small;"> 요리설명 </h3>
+                            <p style="width: 250px; height: 150px; overflow: scroll;">
                             "한국 요리(韓國料理, 문화어: 조선 료리)는 한국의 음식을 뜻한다. 복잡한 궁중 요리에서부터 지방의 특색 요리와 현대의 퓨전 요리에 이르기까지 재료와 조리법이 매우 다양하다. 전통적인 한국 정식은 밥, 국, 김치와 함께 나오는 많은 반찬들로 이루어진다. 한국 요리는 주로 쌀을 기반으로. 일반적으로 사용되는 성분 포함 참기름, 된장, 간장, 소금, 마늘, 생강, 다시마국물그리고 고추장 등으로 맛을 낸다. 김치는 거의 항상 모든 음식에서 제공된다. 식단은 계절별로 다양한데, 전통적으로 겨울 동안에는 마당에 구멍을 파고 땅 속에 묻어 놓은 장독에 저장된 김치와 그 밖에 절인 채소들에 많이 의존했다. 그러나 현재는 계절에 상관없이 대부분의 식단을 맛볼 수 있다."
+                            </p>
 
                             <h3 class=title style="font-size: small;"> 필요재료 </h3>
                             <li style="display: inline-block;"> 재료1 </li>
