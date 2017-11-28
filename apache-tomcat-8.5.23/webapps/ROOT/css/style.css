@@ -2086,6 +2086,7 @@ p.animi{
 .agileits_team_grids{
 	margin:3em 0 0;
 }
+
 .agileits_team_grid h4{
 	margin: 1em 0 .2em;
     color: #84C639;
@@ -2850,4 +2851,80 @@ input.checkbox:checked:after {
     text-decoration: none;
     display: inline-block;
     font-size: 10px;
+}
+ul.tabs {
+    margin-left: 5em;
+    padding: 0;
+    float: left;
+    list-style: none;
+    height: 32px;
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
+    width: 100%;
+    font-family:"dotum";
+    font-size:12px;
+}
+ul.tabs li {
+    float: left;
+    text-align:center;
+    cursor: pointer;
+    width:82px;
+    height: 31px;
+    line-height: 31px;
+    border: 1px solid #eee;
+    border-left: none;
+    font-weight: bold;
+    background: #fafafa;
+    overflow: hidden;
+    position: relative;
+}
+ul.tabs li.active {
+    background: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+}
+.tab_container {
+	margin-left : 2em;
+    border: 1px solid #eee;
+    border-top: none;
+    clear: both;
+    float: left;
+    width: 62em;
+    height: 25em;
+    background: #FFFFFF;
+}
+.tab_content {
+    padding: 5px;
+    font-size: 12px;
+    display: none;
+}
+.tab_container .tab_content ul {
+    width:100%;
+    margin:0px;
+    padding:0px;
+}
+.tab_container .tab_content ul li {
+    padding:5px;
+    list-style:none
+}
+;
+ #container {
+    width: 249px;
+    margin: 0 auto;
+}
+.administrator{
+	margin:3em 0 0;
+	padding-bottom : 30em;
+	background: #FBFCB6
+}
+.administrator h4{
+	text-align:center;
+	color:#212121;
+	padding-bottom:.5em;
+	position:relative;
+	font-size: 2.5em;
+}
+
+
+.duplicatebutton{
+	boder : none;
 }
