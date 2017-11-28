@@ -56,19 +56,33 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="product_list_header" style="padding-right: 2em;">
 			<form action="#" method="post" class="last">
                 <fieldset>
-                    <input type="hidden" name="cmd" value="_cart" />
-                    <input type="hidden" name="display" value="1" />
                     <input type="submit" name="submit" value="장바구니 보기" class="button" />
                 </fieldset>
             </form>
 		</div>
-		<div class="form">
-		<form action'#' method="post" style="padding-top: 0.5em; padding-bottom: 0.5em;">
-			<input type="text" name="Username" placeholder="Username" required=" ">
-			<input type="password" name="Password" placeholder="Password" required=" ">
-			<input type="submit" value="Login" style="padding-bottom: 1px;">
-		</form>
+		
+		
+		<%
+			String sessionid = "";
+			sessionid = (String)session.getAttribute("sessionid");
+			if(sessionid == null || sessionid.equals("")){%>
+			<div class="form">
+   			<fieldset>
+				<form action='#' method="post">
+				<div class ="indexlogin"><a href="login.jsp">Login</a>
+				</div>
+				</form>
+      		</fieldset> 
 		</div>
+	    <%
+			}else{%>
+			<div><%=sessionid %>님 환영합니다.</div>
+			<form action = "logout.jsp" method = "post">
+			<div><input type="submit" value = "로그아웃" ></div>
+			</form>
+		<%}%>
+		
+		
 		<div class="clearfix"> </div>
 	</div>
 <!-- script-for sticky-nav -->

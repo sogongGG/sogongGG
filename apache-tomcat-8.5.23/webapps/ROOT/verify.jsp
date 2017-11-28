@@ -10,28 +10,46 @@
 <body>
 <%
 String LoginUsername=request.getParameter("LoginUsername");
+String LoginPassword=request.getParameter("LoginPassword");
 
 request.setCharacterEncoding("euc-kr");
+
 Class.forName("com.mysql.jdbc.Driver");
 Connection myconn=null;
 myconn = DriverManager.getConnection("jdbc:mysql://localhost:3306/shoppingmall","root","LNiaMelo561248^*");
 
 
-String name = "select * from administrator where ID =?";
+String name = "select * from administrator where ID =? && Password=?";
+
 
 PreparedStatement pst=myconn.prepareStatement(name);
 pst.setString(1, LoginUsername);
+pst.setString(2, LoginPassword);
 ResultSet rs=pst.executeQuery();
 
-if(!rs.next()){
-	out.println("정보없음");
+if(rs.next()){
+	session.setAttribute("sessionid", LoginUsername);
+	rs.previous();
+	response.sendRedirect("admin.jsp");
 }
 else{
-	rs.previous();
-	pageContext.forward("admin.jsp");
+	name = "select * from user where ID =? && Password=?";
+	pst=myconn.prepareStatement(name);
+	pst.setString(1, LoginUsername);
+	pst.setString(2, LoginPassword);
+	rs=pst.executeQuery();
+	
+	if(rs.next()){
+		session.setAttribute("sessionid", LoginUsername);
+		rs.previous();
+		response.sendRedirect("index.jsp");
+	}
+	else{
+		rs.previous();
+		response.sendRedirect("login.jsp");
+	}
+	
 }
-
-
 %>
 
 

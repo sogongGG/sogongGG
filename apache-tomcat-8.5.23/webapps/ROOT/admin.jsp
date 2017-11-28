@@ -80,14 +80,28 @@ $(function () {
                 </fieldset>
             </form>
 		</div>
-		<div class="form">
-      <fieldset>
-		<form action'#' method="post">
-		<div class ="indexlogin"><a href="login.jsp">Login</a>
+		
+		<%
+			String sessionid = "";
+			sessionid = (String)session.getAttribute("sessionid");
+			if(sessionid == null || sessionid.equals("")){%>
+			<div class="form">
+   			<fieldset>
+				<form action='#' method="post">
+				<div class ="indexlogin"><a href="login.jsp">Login</a>
+				</div>
+				</form>
+      		</fieldset> 
 		</div>
-		</form>
-      </fieldset>
-		</div>
+	    <%
+			}else{%>
+			<div><%=sessionid %>님 환영합니다.</div>
+			<form action = "logout.jsp" method = "post">
+			<div><input type="submit" value = "로그아웃" ></div>
+			</form>
+		<%}%>
+		
+		
 		<div class="clearfix"> </div>
 	</div>
 <!-- script-for sticky-nav -->
