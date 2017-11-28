@@ -160,8 +160,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 <!-- //header -->
 <!-- banner -->
-	<div class="banner">
-
+	<div class="banner" style="height: 500px;">
 		<div class="w3l_banner_nav_center">
 			<section class="slider">
 				<div class="flexslider">
@@ -170,23 +169,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="w3l_banner_nav_right_banner">
 								<h3>Make your <span>food</span> with Spicy.</h3>
 								<div class="more">
-									<a href="products.jsp" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="w3l_banner_nav_right_banner1">
-								<h3>Make your <span>food</span> with Spicy.</h3>
-								<div class="more">
-									<a href="products.jsp" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="w3l_banner_nav_right_banner2">
-								<h3>upto <i>50%</i> off.</h3>
-								<div class="more">
-									<a href="products.jsp" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
+									<a href="products.jsp" data-text="Shop now">Shop now</a>
 								</div>
 							</div>
 						</li>
@@ -211,7 +194,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="clearfix"></div>
 	</div>
 <!-- banner -->
-	<div class="agileits_team_grids" style="padding-bottom: 1em;">
+	<div class="agileits_team_grids" style="padding-bottom: 1em; padding-top: 50px; background: #7e7e7eb3; margin-top:0px;">
 		<h4> 5조 구성원 </h4>
 		<div class="col-md-4 agileits_team_grid">
 					<img src="images/32.jpg" alt=" " class="img-responsive">
