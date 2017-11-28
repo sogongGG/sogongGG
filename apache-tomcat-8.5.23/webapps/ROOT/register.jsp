@@ -182,6 +182,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="w3l_banner_nav_right">
 <%
 request.setCharacterEncoding("euc-kr");
+					   
 String ID=request.getParameter("ID");
 String Password=request.getParameter("Password");
 String Lastname=request.getParameter("Lastname");
@@ -198,13 +199,17 @@ String Postnum = request.getParameter("post1") + request.getParameter("post2");
 String addr1=request.getParameter("addr1");
 String addr2=request.getParameter("addr2");
 String addr3=request.getParameter("addr3");
-System.out.println(ID +Password+Lastname+Firstname+year+month+day+Email+Homenum+Phonenum+Postnum+addr1+addr2+addr3);
+
 Class.forName("com.mysql.jdbc.Driver");
 Connection myconn=null;
 myconn = DriverManager.getConnection("jdbc:mysql://localhost:3306/shoppingmall","root","LNiaMelo561248^*");
+
 //String q1="insert into info values('"+code+"','"+irum+"','"+cellphone+"')";
+
 String q1="insert into User values(?,?,?,?,?,?,?,?,?)";
+
 //Statement st=myconn.createStatement();
+
 PreparedStatement usertb=myconn.prepareStatement(q1);
 usertb.setString(1, ID);
 usertb.setString(2, Password);

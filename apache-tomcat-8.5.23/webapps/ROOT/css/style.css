@@ -2851,3 +2851,6 @@ input.checkbox:checked:after {
     display: inline-block;
     font-size: 10px;
 }
+.duplicatebutton{
+	boder : none;
+}

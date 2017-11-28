@@ -1,6 +1,7 @@
 ﻿<%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="UTF-8"%>
 <%@ page import = "java.sql.*" %>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -40,7 +41,38 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <script src = "http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
 <script src = "js/findaddress.js" language = "javascript">openDaumPostcode();</script>
+<script type = "text/javascript">
+var xhr = null;
 
+function getXHR(){
+	if(window.XMLHttpRequest){
+		return new XMLHttpRequest();
+	}
+	else
+	{
+		return new ActiveXObjcet("Microsoft.XMLHTTP");
+	}
+}
+function idCheck(){
+	xhr=getXHR();
+	xhr.onreadystatechange=getResult;
+	var ID=document.getElementById("ID").value;
+	xhr.open("get","idcheck.jsp?id="+ID, true);
+	xhr.send(null);
+}
+function getResult(){
+	if(xhr.readyState == 4 && xhr.status==200){
+		var xml=xhr.responseXML;
+		var re=xml.getElementsByTagName("result")[0].firstChile.nodeValue;
+		
+		if(re=='true'){
+			document.getElementById("idcheck").innerHTML="이미 사용중인 아이디입니다.";
+		}else{
+			document.getElementById("idcheck").innerHTML="사용 가능한 아이디입니다.";
+		}
+	}
+}
+</script>
 <body>
 <!-- header -->
 	<div class="agileits_header">
@@ -201,7 +233,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h2>회원가입을 환영합니다!</h2>
 					<form name = "registerUser" action="register.jsp" method="post">
 					<h2>아이디</h2>
-					  <input type="text" name="ID" id="ID" placeholder="*회원ID" required=" "><br>
+					  <input type="text" name="ID" id="ID" placeholder="*회원ID" required=" " onkeyup="idCheck()">
+					  <span id="idcheck"></span><br>
 					  <h2>비밀번호</h2>
 					  <input type="password" name="Password" id="Password" placeholder="*비밀번호" required=" ">
 					  <input type="password" name="twicePassword" id="twicepassword" placeholder="*비밀번호확인" required=" "><br>
@@ -230,11 +263,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					  <input type="text" name="Homenum" id="Homenum" placeholder="*집전화번호(-제외)" required=" ">
 					  <input type="password" name="Phonenum" id="Phonenum" placeholder="*휴대전화번호(-제외)" required=" "><br>
 					  <h2> 배송지 </h2>
-					  <input id="post1" readonly="" size="5" name="post1"> - <input id="post2" readonly="" size="5" name="post2">
-					  <input class = "findpostnum" type="button" value="우편번호찾기" onclick="openDaumPostcode();"><br>
-					  <input id="addr1" border-color = "gray" readonly="" size="31" name="addr1" placeholder="*도로명주소">
-					  <input id="addr2" readonly="" size="31" name="addr2" placeholder="*지번주소">
-					  <input id="addr3" size="31" name="addr3" placeholder="*상세주소">
+					  <input id="post1" readonly="" size="5" name="post1" required=" "> - <input id="post2" readonly="" size="5" name="post2" required=" ">
+					  <input class = "findpostnum" type="button" value="우편번호찾기" onclick="openDaumPostcode();" required=" "><br>
+					  <input id="addr1" border-color = "gray" readonly="" size="31" name="addr1" placeholder="*도로명주소" required=" ">
+					  <input id="addr2" readonly="" size="31" name="addr2" placeholder="*지번주소" required=" ">
+					  <input id="addr3" size="31" name="addr3" placeholder="*상세주소" required=" ">
 					  <input type="submit" value="Register">
 					</form>
 				  </div>
