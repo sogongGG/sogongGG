@@ -85,7 +85,7 @@ $(function () {
 
 	Class.forName("com.mysql.jdbc.Driver");
 	Connection myconn=null;
-	myconn = DriverManager.getConnection("jdbc:mysql://localhost:3306/shoppingmall","root","LNiaMelo561248^*");
+	myconn = DriverManager.getConnection("jdbc:mysql://localhost:3306/shoppingmall","root","ks01");
 	String name = "select * from administrator where ID =?";
 
 	PreparedStatement pst=myconn.prepareStatement(name);
@@ -237,6 +237,9 @@ $(function () {
 <!-- //header -->
 <!-- banner -->
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 08dc604cbe3ccddf8863f8d9ab416d4068a08836
 
 
 
@@ -248,6 +251,9 @@ $(function () {
 		<h4>관리자 페이지 입니다!</h4>
 		<div id="container">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 08dc604cbe3ccddf8863f8d9ab416d4068a08836
 
 			<script>
 			$("snip1535.hover").mouseleave(function() {
@@ -277,7 +283,11 @@ $(function () {
 			<button type="submit" class="snip1535" onclick="delete_row()">삭제</button>
 			</div>
 		<script>
+<<<<<<< HEAD
     function add_row() {
+=======
+		function add_row() {
+>>>>>>> 08dc604cbe3ccddf8863f8d9ab416d4068a08836
 				var table = document.getElementById('tab1_tbody');
     			var row = table.insertRow( table.rows.length ); // 하단에 추가
     			var cell1 = row.insertCell(0); cell1.innerHTML='<input type="checkbox"/>'
@@ -304,6 +314,9 @@ $(function () {
     			<div class="tab_container">
         			<div id="tab1" class="tab_content">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 08dc604cbe3ccddf8863f8d9ab416d4068a08836
             			<table class = "type09">
             				<thead>
             				<tr>
