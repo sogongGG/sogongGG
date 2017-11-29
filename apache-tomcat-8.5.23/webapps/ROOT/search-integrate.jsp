@@ -60,84 +60,148 @@ if(rs.next())
 
 <body>
 <!-- header -->
-	<div class="agileits_header">
-		<div class="w3l_offers" style="margin-top: 8px;">
-			<a href="products.jsp">5조 쇼핑몰</a>
-		</div>
-		<div class="w3l_search" style="margin-top: 10px;">
-			<form action="#" method="post">
-				<input type="text" name="Product" value="물품 검색" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
-				<input type="submit" value=" ">
-			</form>
-		</div>
-		<div class="product_list_header" style="padding-right: 2em;margin-top: 8px;">
-			<form action="#" method="post" class="last">
-                <fieldset>
-                    <input type="hidden" name="cmd" value="_cart" />
-                    <input type="hidden" name="display" value="1" />
-                    <input type="submit" name="submit" value="장바구니 보기" class="button" />
-                </fieldset>
-            </form>
-		</div>
-		<div class="form">
+<div class="agileits_header">
+  <div class="w3l_offers" style="margin-top: 8px;">
+    <a href="products.jsp">5조 쇼핑몰</a>
+  </div>
+  <div class="w3l_search" style="margin-top: 10px;">
+    <form action="#" method="post">
+      <input type="text" name="Product" value="물품 검색" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
+      <input type="submit" value=" ">
+    </form>
+  </div>
+  <div class="product_list_header" style="padding: 6px, 2em, 6px 4px; margin-top: 10px;">
+    <form action="#" method="post" class="last">
+              <fieldset>
+                  <input type="submit" name="submit" value="장바구니 보기" class="button" />
+              </fieldset>
+          </form>
+  </div>
+
+  <!--  복붙할 구간 *************************************************************************************** -->
+
+  <%
+    String sessionid = "";
+    sessionid = (String)session.getAttribute("sessionid");
+    if(sessionid == null || sessionid.equals("")){%>
+    <div class="form">
       <fieldset>
-		      <form action'#' method="post" style="margin-top: 20px;">
-			         <div class="User">
-                 <ul style="margin-top: 8px;">
-                   <li style="display: inline-block; padding-right: 25px;"> Username님 안녕하세요? </li>
-                   <li style="display: inline-block; padding-right: 25px;">
-                     <i class="fa fa-user" aria-hidden="true"> </i>
-                     <a href="#">MyPage</a>
-                   </li>
-                   <li style="display: inline-block;">
-                     <input type="submit" value="Logout" style="padding-bottom: 1px;">
-                     </li>
-                   </ul>
-                 </div>
-               </form>
-      </fieldset>
-		</div>
-		<div class="clearfix"> </div>
-	</div>
+      <form action='#' method="post">
+      <div class ="indexlogin"><a href="login.jsp">Login</a>
+      </div>
+      </form>
+        </fieldset>
+  </div>
+  <%
+  }else{%>
+  <div></div>
+  <form action = "logout.jsp" method = "post">
+  <div style="padding-top: 20px;">
+    <ul>
+      <li style="display: inline-block; padding-right: 25px; padding-left: 25px;"><%=sessionid %>님 환영합니다.</li>
+      <li style="display: inline-block; padding-right: 25px;">
+        <i class="fa fa-user" aria-hidden="true"> </i>
+        <a href="#">MyPage</a>
+      </li>
+      <li style="display: inline-block; padding-right: 25px;">
+        <input type="submit" value = "로그아웃">
+      </li>
+  </div>
+  </form>
+<%}%>
+  <!--  복붙할 구간 *************************************************************************************** -->
+
+
+
+  <div class="clearfix"> </div>
+</div>
 <!-- script-for sticky-nav -->
-	<script>
-	$(document).ready(function() {
-		 var navoffeset=$(".agileits_header").offset().top;
-		 $(window).scroll(function(){
-			var scrollpos=$(window).scrollTop();
-			if(scrollpos >=navoffeset){
-				$(".agileits_header").addClass("fixed");
-			}else{
-				$(".agileits_header").removeClass("fixed");
-			}
-		 });
-	});
-	</script>
+<script>
+$(document).ready(function() {
+   var navoffeset=$(".agileits_header").offset().top;
+   $(window).scroll(function(){
+    var scrollpos=$(window).scrollTop();
+    if(scrollpos >=navoffeset){
+      $(".agileits_header").addClass("fixed");
+    }else{
+      $(".agileits_header").removeClass("fixed");
+    }
+   });
+
+});
+</script>
 <!-- //script-for sticky-nav -->
-	<div class="logo_products" style="padding-top: 80px;">
-		<div class="container">
-			<div class="w3ls_logo_products_left">
-				<h1><a href="index.jsp"><span>Grocery</span> Store</a></h1>
-			</div>
-			<div class="w3ls_logo_products_left1">
-				<ul class="special_items">
-					<li><a href="events.jsp">모든 상품</a><i>/</i></li>
-					<li><a href="about.jsp">요리</a><i>/</i></li>
-					<li><a href="products.jsp">재료</a><i>/</i></li>
-					<li><a href="services.jsp">마트</a></li>
+<div class="logo_products" style="padding-top: 80px;">
+  <div class="container">
+    <div class="w3ls_logo_products_left">
+      <h1><a href="index.jsp"><span>Grocery</span> Store</a></h1>
+    </div>
+    <div class="w3ls_logo_products_left1">
+      <ul class="special_items">
+        <li><a href="events.jsp">모든 상품</a><i>/</i></li>
+        <li><a href="about.jsp">요리</a><i>/</i></li>
+        <li><a href="products.jsp">재료</a><i>/</i></li>
+        <li><a href="services.jsp">마트</a></li>
+      </ul>
+    </div>
+    <div class="w3ls_logo_products_left1">
+      <!-- 역 지오 코딩-->
 
+        <script type="text/javascript" charset="utf-8">
+      /*
+        navigator.geolocation.getCurrentPosition(
+        function initMap(position) {
+            console.log('location load');
+          var uluru = {lat: position.coords.latitude, lng:position.coords.longitude};
+          var geocoder = new google.maps.Geocoder;
+          geocodeLatLng(geocoder,uluru);
+        });
+        */
+        function initMap() {
+      }
+        function getLocation() {
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(onSuccess, onError);
+          }
+        }
+        function onError(error) {
+          alert('code: '    + error.code    + '\n' +
+          'message: ' + error.message + '\n');
+      }
+        function onSuccess(position) {
+          var uluru = {lat: position.coords.latitude, lng:position.coords.longitude};
+          var geocoder = new google.maps.Geocoder;
+         geocodeLatLng(geocoder,uluru);
+      }
+        function geocodeLatLng(geocoder,uluru) {
+          var latlng = uluru;
+          geocoder.geocode({'location': latlng}, function(results, status) {
+            if (status === 'OK') {
+              if (results[1]) {
+                document.getElementById("now_location").innerHTML =" "+ results[1].formatted_address;
+              } else {
+                document.getElementById("now_location").innerHTML = "위치를 찾을수 없습니다.";
+              }
+            } else {
+              document.getElementById("now_location").innerHTML ="위치확인이 불가합니다.";
+            }
+          });
+        }
+      </script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoJWfF7bE_v8AWgcksE52yTbQFoJ6jBPI&callback=initMap">
+      </script>
 
-				</ul>
-			</div>
-			<div class="w3ls_logo_products_left1">
-				<ul class="phone_email">
-					<li><i class="fa fa-phone" aria-hidden="true"></i>(+0123) 234 567</li>
-					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:store@grocery.com">store@grocery.com</a></li>
-				</ul>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
+      <!-- -->
+      <ul class="phone_email">
+        <a class="btn" href="#">
+        <li><i class="fa fa-map-marker" aria-hidden="true" id="now_location" onclick="getLocation()">&nbsp;&nbsp;&nbsp;현재위치 확인</i></li></a>
+        <li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:store@grocery.com">store@grocery.com</a></li>
+      </ul>
+    </div>
+    <div class="clearfix"> </div>
+  </div>
+</div>
 <!-- //header -->
 <!-- banner -->
 	<div class="banner">
