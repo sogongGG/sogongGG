@@ -46,13 +46,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="text/javascript">
 $(function(){ //전체선택 체크박스 클릭
 	$("#allCheck").click(function(){ //만약 전체 선택 체크박스가 체크된상태일경우
-		if($("#allCheck").prop("checked")) 
+		if($("#allCheck").prop("checked"))
 		{ //해당화면에 전체 checkbox들을 체크해준다
 			$("input[type=checkbox]").prop("checked",true); // 전체선택 체크박스가 해제된 경우
 		}
 		else{ //해당화면에 모든 checkbox들의 체크를해제시킨다.
-			$("input[type=checkbox]").prop("checked",false); 
-		} 
+			$("input[type=checkbox]").prop("checked",false);
+		}
 	})
 })
 </script>
@@ -69,13 +69,13 @@ $(function(){ //전체선택 체크박스 클릭
 
 	Class.forName("com.mysql.jdbc.Driver");
 	Connection myconn=null;
-	myconn = DriverManager.getConnection("jdbc:mysql://localhost:3306/shoppingmall","root","LNiaMelo561248^*");
+	myconn = DriverManager.getConnection("jdbc:mysql://localhost:3306/shoppingmall","root","ks01");
 	String name = "select * from administrator where ID =?";
 
 	PreparedStatement pst=myconn.prepareStatement(name);
 	pst.setString(1, sessionid);
 	ResultSet rs=pst.executeQuery();
-	
+
 	if(!rs.next()){%>
 		<script>
 		alert('권한이 없습니다.');
@@ -108,9 +108,9 @@ $(function(){ //전체선택 체크박스 클릭
                 </fieldset>
             </form>
 		</div>
-		
+
 		<%
-			
+
 			if(sessionid == null || sessionid.equals("")){%>
 			<div class="form">
    			<fieldset>
@@ -118,7 +118,7 @@ $(function(){ //전체선택 체크박스 클릭
 				<div class ="indexlogin"><a href="login.jsp">Login</a>
 				</div>
 				</form>
-      		</fieldset> 
+      		</fieldset>
 		</div>
 	    <%
 			}else{%>
@@ -127,8 +127,8 @@ $(function(){ //전체선택 체크박스 클릭
 			<div><input type="submit" value = "로그아웃" ></div>
 			</form>
 		<%}%>
-		
-		
+
+
 		<div class="clearfix"> </div>
 	</div>
 <!-- script-for sticky-nav -->
@@ -220,14 +220,14 @@ $(function(){ //전체선택 체크박스 클릭
 	</div>
 <!-- //header -->
 <!-- banner -->
-	
-	
+
+
 
 <!-- banner -->
 	<div class="administrator">
 		<h4>관리자 페이지 입니다!</h4>
 		<div id="container">
-		
+
 			<script>
 			$("snip1535.hover").mouseleave(function() {
    				 $(this).removeClass("hover");
@@ -255,7 +255,7 @@ $(function(){ //전체선택 체크박스 클릭
 			<button type="submit" class="snip1535">수정</button>
 			<button type="submit" class="snip1535" onclick="delete_row()">삭제</button>
 			</div>
-		<script>	
+		<script>
 		function add_row() {
 				var table = document.getElementById('tab1_tbody');
     			var row = table.insertRow( table.rows.length ); // 하단에 추가
@@ -280,81 +280,81 @@ $(function(){ //전체선택 체크박스 클릭
    			</ul>
     			<div class="tab_container">
         			<div id="tab1" class="tab_content">
-            			<table class = "type09"> 
+            			<table class = "type09">
             				<thead>
-            				<tr> 
+            				<tr>
             					<th> <input type="checkbox" id="allCheck"/>전체선택 </th>
-            					<th>사진 링크</th> 
+            					<th>사진 링크</th>
             					<th>Name</th>
-            					<th>필요 재료</th> 
-            					<th>평균 가격</th> 
-            					<th>보관법</th> 
-            					<th>손질</th> 
-            				</tr> 
+            					<th>필요 재료</th>
+            					<th>평균 가격</th>
+            					<th>보관법</th>
+            					<th>손질</th>
+            				</tr>
             				</thead>
             				<tbody id = "tab1_tbody">
-            				<tr> 
+            				<tr>
             					<td> <input type="checkbox"/> </td>
-            					<td></td> 
             					<td></td>
-            					<td></td> 
-            					<td></td> 
-            					<td></td> 
-            					<td></td> 
+            					<td></td>
+            					<td></td>
+            					<td></td>
+            					<td></td>
+            					<td></td>
             				</tr>
             				</tbody>
             			</table>
-        			</div>		
+        			</div>
         <!-- #tab1 -->
         			<div id="tab2" class="tab_content">
-        			<table class = "type09"> 
+        			<table class = "type09">
             				<thead>
-            				<tr> 
+            				<tr>
             					<th> <input type="checkbox" id="allCheck"/>전체선택 </th>
-            					<th>요리 사진 링크</th> 
+            					<th>요리 사진 링크</th>
             					<th>요리 이름</th>
-            					<th>평점</th> 
-            					<th>요리 설명</th> 
-            					<th>필요한 재료 리스트</th> 
+            					<th>평점</th>
+            					<th>요리 설명</th>
+            					<th>필요한 재료 리스트</th>
             					<th></th>
-            				</tr> 
+            				</tr>
             				</thead>
             				<tbody  id = "tab2_tbody">
-            				<tr> 
+            				<tr>
             					<td> <input type="checkbox"/> </td>
-            					<td></td> 
-            					<td></td> 
-            					<td></td> 
-            					<td></td> 
-            					<td></td> 
-            					<td></td> 
+            					<td></td>
+            					<td></td>
+            					<td></td>
+            					<td></td>
+            					<td></td>
+            					<td></td>
             				</tr>
             				</tbody>
             			</table>
         			</div>
         			<!-- tab3 -->
         			<div id="tab3" class="tab_content">
-        			<table class = "type09"> 
+        			<table class = "type09">
             				<thead>
-            				<tr> 
+            				<tr>
             					<th> <input type="checkbox" id="allCheck"/>전체선택 </th>
-            					<th>마트 사진 링크</th> 
+            					<th>마트 사진 링크</th>
             					<th>마트 전화번호</th>
-            					<th>마트 주소</th> 
-            					<th>마트에서 구입한 리스트</th> 
-            					<th>세일 중인 리스트</th> 
+            					<th>마트 주소</th>
+            					<th>마트에서 구입한 리스트</th>
+            					<th>세일 중인 리스트</th>
             					<th></th>
-            				</tr> 
+            				</tr>
             				</thead>
             				<tbody  id = "tab3_tbody">
-            				<tr> 
+            				<tr>
             					<td> <input type="checkbox"/> </td>
-            					<td></td> 
-            					<td></td> 
-            					<td></td> 
-            					<td></td> 
-            					<td></td> 
-            					<td></td> 
+            					<td></td>
+            					<td></td>
+            					<td></td>
+            					<td></td>
+            					<td></td>
+            					<td></td>
             				</tr>
             				</tbody>
             			</table>
@@ -364,7 +364,7 @@ $(function(){ //전체선택 체크박스 클릭
     	<!-- .tab_container -->
 		</div>
 	</div>
-	
+
 <!-- top-brands -->
 	<div class="top-brands">
 		<div class="container">
