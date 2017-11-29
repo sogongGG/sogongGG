@@ -1,5 +1,11 @@
 ﻿<%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="UTF-8"%>
+<!--
+author: W3layouts
+author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
 <html>
 <head>
 <title>소공 5조-강산,치종,정훈</title>
@@ -55,9 +61,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </fieldset>
             </form>
 		</div>
-		
+
 		<!--  복붙할 구간 *************************************************************************************** -->
-		
+
 		<%
 			String sessionid = "";
 			sessionid = (String)session.getAttribute("sessionid");
@@ -68,7 +74,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class ="indexlogin"><a href="login.jsp">Login</a>
 				</div>
 				</form>
-      		</fieldset> 
+      		</fieldset>
 		</div>
 	    <%
 			}else{%>
@@ -78,9 +84,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</form>
 		<%}%>
 		<!--  복붙할 구간 *************************************************************************************** -->
-		
-		
-		
+
+
+
 		<div class="clearfix"> </div>
 	</div>
 <!-- script-for sticky-nav -->
@@ -102,7 +108,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="logo_products" style="padding-top: 80px;">
 		<div class="container">
 			<div class="w3ls_logo_products_left">
-				<h1><a href="index.jsp"><span>Grocery</span> Store</a></h1>
+				<h1>
+          <a href="index.jsp"><img src="./images/oOo.gif" alt="O o O"
+            height="120" width="250" class="img-responsive img-circle" ></a>
+        </h1>
 			</div>
 			<div class="w3ls_logo_products_left1">
 				<ul class="special_items">
