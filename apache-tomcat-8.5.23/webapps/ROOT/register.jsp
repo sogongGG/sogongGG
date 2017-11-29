@@ -216,7 +216,7 @@ String addr3=request.getParameter("addr3");
 
 Class.forName("com.mysql.jdbc.Driver");
 Connection myconn=null;
-myconn = DriverManager.getConnection("jdbc:mysql://localhost:3306/shoppingmall","root","admin");
+myconn = DriverManager.getConnection("jdbc:mysql://localhost:3306/shoppingmall","root","ks01);
 
 //String q1="insert into info values('"+code+"','"+irum+"','"+cellphone+"')";
 

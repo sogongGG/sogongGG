@@ -16,7 +16,7 @@ request.setCharacterEncoding("euc-kr");
 
 Class.forName("com.mysql.jdbc.Driver");
 Connection myconn=null;
-myconn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/shoppingmall","root","admin");
+myconn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/shoppingmall","root","ks01");
 
 
 String name = "select * from administrator where ID =? && Password=?";

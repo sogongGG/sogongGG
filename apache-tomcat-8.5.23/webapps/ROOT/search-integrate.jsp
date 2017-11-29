@@ -45,7 +45,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <%
 Class.forName("com.mysql.jdbc.Driver");
 String searchKey = "testing";
-Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/shoppingmall", "root", "admin");
+Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/shoppingmall", "root", "ks01");
 Statement stmt = conn.createStatement();
 String search = "select * from food where Genre ='"+searchKey+"';";
 ResultSet rs = stmt.executeQuery(search);
