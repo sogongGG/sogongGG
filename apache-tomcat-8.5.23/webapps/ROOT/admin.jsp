@@ -60,24 +60,8 @@ $(function(){ //전체선택 체크박스 클릭
 </head>
 
 <script src = "http://code.jquery.com/jquery-1.10.1.js"></script>
-<script>
-$(function () {
 
-    $(".tab_content").hide();
-    $(".tab_content:first").show();
-
-    $("ul.tabs li").click(function () {
-        $("ul.tabs li").removeClass("active").css("color", "#333");
-        //$(this).addClass("active").css({"color": "darkred","font-weight": "bolder"});
-        $(this).addClass("active").css("color", "darkred");
-        $(".tab_content").hide()
-        var activeTab = $(this).attr("rel");
-        $("#" + activeTab).fadeIn()
-    });
-});
-</script>
 <body>
-
 <%
 	String sessionid = "";
 	sessionid = (String)session.getAttribute("sessionid");
@@ -237,10 +221,58 @@ $(function () {
 <!-- //header -->
 <!-- banner -->
 	
+	
+
 <!-- banner -->
 	<div class="administrator">
 		<h4>관리자 페이지 입니다!</h4>
 		<div id="container">
+		
+			<script>
+			$("snip1535.hover").mouseleave(function() {
+   				 $(this).removeClass("hover");
+  					}
+			);
+			</script>
+			<script>
+	$(document).ready(function() {
+    	$(".tab_content").hide();
+    	$(".tab_content:first").show();
+
+    	$("ul.tabs li").click(
+    	function (){
+        	$("ul.tabs li").removeClass("active").css("color", "#333");
+        	$(this).addClass("active").css("color", "darkred");
+        	$(".tab_content").hide();
+       		var activeTab = $(this).attr("rel");
+        	$("#" + activeTab).fadeIn()
+    	});
+	});
+</script>
+			<div class = "adminbuttonset1">
+            <button type="submit" class="snip1535">불러오기</button>
+			<button type="submit" class="snip1535" onclick="add_row()">추가</button>
+			<button type="submit" class="snip1535">수정</button>
+			<button type="submit" class="snip1535" onclick="delete_row()">삭제</button>
+			</div>
+		<script>	
+		function add_row() {
+				var table = document.getElementById('tab1_tbody');
+    			var row = table.insertRow( table.rows.length ); // 하단에 추가
+    			var cell1 = row.insertCell(0); cell1.innerHTML='<input type="checkbox"/>'
+    			var cell2 = row.insertCell(1);
+    			var cell3 = row.insertCell(2);
+   			 	var cell4 = row.insertCell(3);
+    			var cell5 = row.insertCell(4);
+    			var cell6 = row.insertCell(5);
+    			var cell7 = row.insertCell(6);
+  		}
+ 		function delete_row() {
+    		var table = document.getElementById('tab1_tbody');
+    		if (table.rows.length < 1) return;
+    		table.deleteRow( table.rows.length-1 ); // 하단부터 삭제
+  		}
+		</script>
     		<ul class="tabs">
         	<li class="active" rel="tab1">요리</li>
         	<li rel="tab2">재료</li>
@@ -248,51 +280,84 @@ $(function () {
    			</ul>
     			<div class="tab_container">
         			<div id="tab1" class="tab_content">
-            			<table class = "admintable"> 
+            			<table class = "type09"> 
+            				<thead>
             				<tr> 
             					<th> <input type="checkbox" id="allCheck"/>전체선택 </th>
-            					<th>사진 링크
-            					</th> 
-            					<th>Name
-            					</th>
-            					<th>필요 재료
-            					</th> 
-            					<th>평균 가격
-            					</th> 
-            					<th>보관법
-            					</th> 
-            					<th>손질
-            					</th> 
+            					<th>사진 링크</th> 
+            					<th>Name</th>
+            					<th>필요 재료</th> 
+            					<th>평균 가격</th> 
+            					<th>보관법</th> 
+            					<th>손질</th> 
             				</tr> 
+            				</thead>
+            				<tbody id = "tab1_tbody">
             				<tr> 
-            					<td> <input type="checkbox"/> </td> 
+            					<td> <input type="checkbox"/> </td>
+            					<td></td> 
+            					<td></td>
+            					<td></td> 
+            					<td></td> 
+            					<td></td> 
+            					<td></td> 
             				</tr>
-            				<tr><td></td></tr> 
-            				<tr> 
-            					<td> <input type="checkbox"/>
-            					</td> 
-            				</tr> 
-            				<tr> 
-            					<td> <input type="checkbox"/> 
-            					</td> 
-            				</tr> 
-            				<tr> 
-            					<td> <input type="checkbox"/> 
-            					</td> 
-            				</tr> 
-            				<tr> 
-            					<td> <input type="checkbox"/> 
-            					</td> 
-            				</tr> 
+            				</tbody>
             			</table>
-        			</div>
+        			</div>		
         <!-- #tab1 -->
         			<div id="tab2" class="tab_content">
-        			222
+        			<table class = "type09"> 
+            				<thead>
+            				<tr> 
+            					<th> <input type="checkbox" id="allCheck"/>전체선택 </th>
+            					<th>요리 사진 링크</th> 
+            					<th>요리 이름</th>
+            					<th>평점</th> 
+            					<th>요리 설명</th> 
+            					<th>필요한 재료 리스트</th> 
+            					<th></th>
+            				</tr> 
+            				</thead>
+            				<tbody  id = "tab2_tbody">
+            				<tr> 
+            					<td> <input type="checkbox"/> </td>
+            					<td></td> 
+            					<td></td> 
+            					<td></td> 
+            					<td></td> 
+            					<td></td> 
+            					<td></td> 
+            				</tr>
+            				</tbody>
+            			</table>
         			</div>
-        <!-- #tab2 -->
+        			<!-- tab3 -->
         			<div id="tab3" class="tab_content">
-        			333
+        			<table class = "type09"> 
+            				<thead>
+            				<tr> 
+            					<th> <input type="checkbox" id="allCheck"/>전체선택 </th>
+            					<th>마트 사진 링크</th> 
+            					<th>마트 전화번호</th>
+            					<th>마트 주소</th> 
+            					<th>마트에서 구입한 리스트</th> 
+            					<th>세일 중인 리스트</th> 
+            					<th></th>
+            				</tr> 
+            				</thead>
+            				<tbody  id = "tab3_tbody">
+            				<tr> 
+            					<td> <input type="checkbox"/> </td>
+            					<td></td> 
+            					<td></td> 
+            					<td></td> 
+            					<td></td> 
+            					<td></td> 
+            					<td></td> 
+            				</tr>
+            				</tbody>
+            			</table>
         			</div>
         <!-- #tab3 -->
     			</div>
