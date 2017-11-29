@@ -76,13 +76,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</form>
       		</fieldset>
 		</div>
-	    <%
-			}else{%>
-			<div><%=sessionid %>님 환영합니다.</div>
-			<form action = "logout.jsp" method = "post">
-			<div><input type="submit" value = "로그아웃"></div>
-			</form>
-		<%}%>
+    <%
+    }else{%>
+    <div></div>
+    <form action = "logout.jsp" method = "post">
+    <div style="padding-top: 20px;">
+      <ul>
+        <li style="display: inline-block; padding-right: 25px;"><%=sessionid %>님 환영합니다.</li>
+        <li style="display: inline-block; padding-right: 25px;">
+          <i class="fa fa-user" aria-hidden="true"> </i>
+          <a href="#">MyPage</a>
+        </li>
+        <li style="display: inline-block; padding-right: 25px;">
+          <input type="submit" value = "로그아웃">
+        </li>
+    </div>
+    </form>
+  <%}%>
 		<!--  복붙할 구간 *************************************************************************************** -->
 
 

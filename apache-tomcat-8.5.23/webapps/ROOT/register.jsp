@@ -60,8 +60,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </fieldset>
             </form>
 		</div>
-		
-		
+
+
 		<%
 			String sessionid = "";
 			sessionid = (String)session.getAttribute("sessionid");
@@ -72,7 +72,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class ="indexlogin"><a href="login.jsp">Login</a>
 				</div>
 				</form>
-      		</fieldset> 
+      		</fieldset>
 		</div>
 	    <%
 			}else{%>
@@ -81,8 +81,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div><input type="submit" value = "로그아웃" ></div>
 			</form>
 		<%}%>
-		
-		
+
+
 		<div class="clearfix"> </div>
 	</div>
 <!-- script-for sticky-nav -->
@@ -196,7 +196,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="w3l_banner_nav_right">
 <%
 request.setCharacterEncoding("euc-kr");
-					   
+
 String ID=request.getParameter("ID");
 String Password=request.getParameter("Password");
 String Lastname=request.getParameter("Lastname");
@@ -216,7 +216,7 @@ String addr3=request.getParameter("addr3");
 
 Class.forName("com.mysql.jdbc.Driver");
 Connection myconn=null;
-myconn = DriverManager.getConnection("jdbc:mysql://localhost:3306/shoppingmall","root","LNiaMelo561248^*");
+myconn = DriverManager.getConnection("jdbc:mysql://localhost:3306/shoppingmall","root","admin");
 
 //String q1="insert into info values('"+code+"','"+irum+"','"+cellphone+"')";
 

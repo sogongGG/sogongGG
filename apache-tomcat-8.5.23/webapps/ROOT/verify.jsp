@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="UTF-8"%>
 <%@ page import = "java.sql.*" %>
-    
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -16,7 +16,7 @@ request.setCharacterEncoding("euc-kr");
 
 Class.forName("com.mysql.jdbc.Driver");
 Connection myconn=null;
-myconn = DriverManager.getConnection("jdbc:mysql://localhost:3306/shoppingmall","root","LNiaMelo561248^*");
+myconn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/shoppingmall","root","admin");
 
 
 String name = "select * from administrator where ID =? && Password=?";
@@ -38,7 +38,7 @@ else{
 	pst.setString(1, LoginUsername);
 	pst.setString(2, LoginPassword);
 	rs=pst.executeQuery();
-	
+
 	if(rs.next()){
 		session.setAttribute("sessionid", LoginUsername);
 		rs.previous();
@@ -48,7 +48,7 @@ else{
 		rs.previous();
 		response.sendRedirect("login.jsp");
 	}
-	
+
 }
 %>
 

@@ -1,0 +1,4 @@
+
+*.log
+*.txt
+apache-tomcat-8.5.23/lib/mysql-connector-java-5.1.44-bin.jar
