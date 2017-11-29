@@ -250,8 +250,7 @@ $(function () {
         			<div id="tab1" class="tab_content">
             			<table class = "admintable"> 
             				<tr> 
-            					<th> <input type="checkbox" id="allCheck"/>전체선택 
-            					</th>
+            					<th> <input type="checkbox" id="allCheck"/>전체선택 </th>
             					<th>사진 링크
             					</th> 
             					<th>Name
@@ -266,8 +265,7 @@ $(function () {
             					</th> 
             				</tr> 
             				<tr> 
-            					<td> <input type="checkbox"/> 
-            					</td> 
+            					<td> <input type="checkbox"/> </td> 
             				</tr>
             				<tr><td></td></tr> 
             				<tr> 
