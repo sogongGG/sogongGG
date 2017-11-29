@@ -246,10 +246,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           		       </div>
                      <div class="col-md-3 w3ls_w3l_banner_left" style="padding-left: 0px;">
                         <h3 class=title style="font-size: small;"> 인근마트 </h3>
+                        <a class="btn" href="#">
+                          <i class="fa fa-map-marker" aria-hidden="true"
+                            id="now_location" onclick="getLocation()">&nbsp;&nbsp;&nbsp;현재위치로 검색하기!</i>
+                        </a>
                        <div id="map" style="width: 120%; height:350px; background-color: grey;"> </div>
 
                       <!-- address에 검색값 input !!!!-->
                        <script>
+
                        function initMap() {
                          var map = new google.maps.Map(document.getElementById('map'), {
                            zoom: 15,
@@ -257,7 +262,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                          });
                          var geocoder = new google.maps.Geocoder();
                         ////////////address에 검색값 input!!!!
-                         var address ="디디피";
+                         var address ="명동";
                          geocodeAddress(address,geocoder, map);
                        }
 
@@ -279,7 +284,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                'ps.아..컴공과는 엘레베이터타고 다니죠..';
                                makemarker("동국대학교","./images/dongguk.jpg",input_content,resultsMap,
                                 37.5575367,127.0007751)
-
                              }
                            });
                          }
@@ -300,6 +304,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                              infowindow.open(map, marker);
                            });
                          }
+
+                         function getLocation() {
+                           navigator.geolocation.getCurrentPosition(
+                             function initMap(position) {
+                               var lat = position.coords.latitude + ","+position.coords.longitude;
+                               var address2 = lat;
+                            //   var geocoder = new google.maps.Geocoder();
+                               var map2 = new google.maps.Map(document.getElementById('map'), {
+                                 zoom:15,
+                                 center: {lat:37.5575367,lng:127.0007751}
+                               });
+                                var geocoder2 = new google.maps.Geocoder();
+                               geocodeAddress(address2,geocoder2, map2);
+                             }
+                           );
+                         }
+
 
                        </script>
 
