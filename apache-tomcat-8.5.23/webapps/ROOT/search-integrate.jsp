@@ -328,26 +328,93 @@ $(document).ready(function() {
               </div>
 					  </div>
           </div>
+
+
           <div class="col-md-3 w3ls_w3l_banner_left" style="padding-left: 0px;">
             <h3 class=title style="font-size: small;"> 인근마트 </h3>
-            <div id="map" style="width: 120%; height:300px; background-color: grey;"> </div>
-              <script>
-                function initMap() {
-                  var uluru = {lat:  37.561093, lng: 126.993539};
-                  var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 15,
-                    center: uluru
-                  });
-                  var marker = new google.maps.Marker({
-                    position: uluru,
-                    map: map
-                  });
-                }
-              </script>
-              <script async defer
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCO-USh8Pt7yrfjEmuvjV1rQ5RxrLc-V7w&callback=initMap">
-              </script>
-          	</div>
+            <a class="btn" href="#">
+              <i class="fa fa-map-marker" aria-hidden="true"
+                id="now_location" onclick="getLocation()">&nbsp;&nbsp;&nbsp;현재위치로 검색하기!</i>
+            </a>
+            <div id="map" style="width: 120%; height:350px; background-color: grey;"> </div>
+
+            <!-- address에 검색값 input !!!!-->
+            <script>
+
+            function initMap() {
+             var map = new google.maps.Map(document.getElementById('map'), {
+               zoom: 15,
+               center: {lat:37.5575367,lng:127.0007751}
+             });
+             var geocoder = new google.maps.Geocoder();
+            ////////////address에 검색값 input!!!!
+             var address ="명동";
+             geocodeAddress(address,geocoder, map);
+            }
+
+             function geocodeAddress(address,geocoder, resultsMap) {
+             geocoder.geocode({'address': address}, function(results, status) {
+                 if (status === 'OK') {
+                   resultsMap.setCenter(results[0].geometry.location);
+                 var input_content = '<p>'+results[0].formatted_address+'</p>';
+                 makemarker("검색위치","./images/cheering_minions.gif",input_content,resultsMap,
+                  results[0].geometry.location.lat(), results[0].geometry.location.lng())
+
+                   //  qurry( resultsMap,lat(),lng()) -> makemarker
+
+                 } else {
+                 //  alert('위치검색이 안되서 "동국대"로 보여드릴게요!');
+                   resultsMap.setCenter({lat:37.5575367,lng:127.0007751});
+                   input_content =  '<p>학생들의 건강을 고려해 언덕에 지어졌죠.<br>'+
+                                   '컴공과 학생들이 가끔 아픈건 안 비밀</p>'+
+                                   'ps.아..컴공과는 엘레베이터타고 다니죠..';
+                   makemarker("동국대학교","./images/dongguk.jpg",input_content,resultsMap,
+                    37.5575367,127.0007751)
+                 }
+               });
+             }
+
+             function makemarker(head_D,img_D,content_D,resultsMap,lat_D,lng_D){
+                 //resultsMap.setCenter({lat:37.5575367,lng:127.0007751});
+                 var infowindow = new google.maps.InfoWindow({
+                   content: '<h1><b>'+ head_D +'</b></h1>'+
+                           '<img src="'+img_D+ '"alt="ㅠㅠ사진불러오기실패" height="130" width="170"><br>'+
+                            "'"+content_D+"'"
+                 })
+               var marker = new google.maps.Marker({
+                 map: resultsMap,
+                 position: {lat: lat_D,lng:lng_D},
+                 title : '클릭하면 더 자세한 정보를 보여드려요!'
+               });
+               marker.addListener('click', function() {
+                 infowindow.open(map, marker);
+               });
+             }
+
+             function getLocation() {
+               navigator.geolocation.getCurrentPosition(
+                 function initMap(position) {
+                   var lat = position.coords.latitude + ","+position.coords.longitude;
+                   var address2 = lat;
+                //   var geocoder = new google.maps.Geocoder();
+                   var map2 = new google.maps.Map(document.getElementById('map'), {
+                     zoom:15,
+                     center: {lat:37.5575367,lng:127.0007751}
+                   });
+                    var geocoder2 = new google.maps.Geocoder();
+                   geocodeAddress(address2,geocoder2, map2);
+                 }
+               );
+             }
+
+
+            </script>
+
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoJWfF7bE_v8AWgcksE52yTbQFoJ6jBPI&callback=initMap">
+            </script>
+            </div>
+
            </div>
          </div>
 
