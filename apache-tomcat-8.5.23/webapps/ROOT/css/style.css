@@ -2882,6 +2882,7 @@ ul.tabs li.active {
     background: #FFFFFF;
     border-bottom: 1px solid #FFFFFF;
 }
+
 .tab_container {
 	margin-left : 2em;
     border: 1px solid #eee;
@@ -2892,9 +2893,10 @@ ul.tabs li.active {
     height: 25em;
     background: #FFFFFF;
 }
+
 .tab_content {
     padding: 5px;
-    font-size: 12px;
+    font-size: 14px;
     display: none;
 }
 .tab_container .tab_content ul {
@@ -2906,7 +2908,6 @@ ul.tabs li.active {
     padding:5px;
     list-style:none
 }
-;
  #container {
     width: 249px;
     margin: 0 auto;
