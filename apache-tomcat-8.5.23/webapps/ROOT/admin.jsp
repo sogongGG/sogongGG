@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="UTF-8"%>
+    <%@ page import = "java.sql.*" %>
 <!--
 author: W3layouts
 author URL: http://w3layouts.com
@@ -62,6 +63,35 @@ $(function () {
 });
 </script>
 <body>
+
+<%
+	String sessionid = "";
+	sessionid = (String)session.getAttribute("sessionid");
+	request.setCharacterEncoding("euc-kr");
+
+	Class.forName("com.mysql.jdbc.Driver");
+	Connection myconn=null;
+	myconn = DriverManager.getConnection("jdbc:mysql://localhost:3306/shoppingmall","root","LNiaMelo561248^*");
+	String name = "select * from administrator where ID =?";
+
+	PreparedStatement pst=myconn.prepareStatement(name);
+	pst.setString(1, sessionid);
+	ResultSet rs=pst.executeQuery();
+	
+	if(!rs.next()){%>
+		<script>
+		alert('권한이 없습니다.');
+		window.history.back();
+		</script>
+	<%}
+	else{
+		%>
+		<script>
+		alert('관리자님 안녕하세요.');
+		</script>
+	<%
+	}
+%>
 <!-- header -->
 	<div class="agileits_header">
 		<div class="w3l_offers" style="margin-top: 8px;">
@@ -82,8 +112,7 @@ $(function () {
 		</div>
 		
 		<%
-			String sessionid = "";
-			sessionid = (String)session.getAttribute("sessionid");
+			
 			if(sessionid == null || sessionid.equals("")){%>
 			<div class="form">
    			<fieldset>
