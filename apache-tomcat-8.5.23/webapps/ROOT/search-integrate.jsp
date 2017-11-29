@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="UTF-8"%>
+<%@ page import = "java.sql.*" %>
 <!--
 author: W3layouts
 author URL: http://w3layouts.com
@@ -41,6 +42,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </script>
 <!-- start-smoth-scrolling -->
 </head>
+<%
+Class.forName("com.mysql.jdbc.Driver");
+String searchKey = "testing";
+Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/shoppingmall", "root", "admin");
+Statement stmt = conn.createStatement();
+String search = "select * from food where Genre ='"+searchKey+"';";
+ResultSet rs = stmt.executeQuery(search);
+//<li><a href="services.jsp">마트</a></li>
+String testingst = "<li><a href=" + '"' + "services.jsp"+ '"' + ">Hi</a></li>";
+String test = "<li style=" + '"' + "display: inline;" + '"' + ">Hello</li>";
+%>
+
+<%
+if(rs.next())
+%>
 
 <body>
 <!-- header -->
@@ -95,7 +111,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				$(".agileits_header").removeClass("fixed");
 			}
 		 });
-
 	});
 	</script>
 <!-- //script-for sticky-nav -->
@@ -110,6 +125,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li><a href="about.jsp">요리</a><i>/</i></li>
 					<li><a href="products.jsp">재료</a><i>/</i></li>
 					<li><a href="services.jsp">마트</a></li>
+
+
 				</ul>
 			</div>
 			<div class="w3ls_logo_products_left1">
@@ -176,24 +193,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- banner -->
 <div class="search">
   <div class="panel-group w3l_panel_group_faq" id="accordion" aria-multiselectable="true">
-			  <div class="panel panel-default">
-				<div class="panel-heading" role="tab" id="headingFour">
-				  <h4 class="panel-title asd">
-					통합검색 결과
-				  </h4>
-				</div>
-				   <div class="panel-body panel_text">
-
-<h3 style="text-align: left;"> 혹시 이것을 찾으시나요? </h3>
-<div class="col-md-3 w3ls_w3l_banner_left w3ls_w3l_banner_left_asdfdfd" style="padding-left: 0px; padding-right: 0px;>
-						<div class="hover14 column">
-						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+		<div class="panel panel-default">
+		  <div class="panel-heading" role="tab" id="headingFour">
+			  <h4 class="panel-title asd">통합검색 결과</h4>
+			</div>
+  		  <div class="panel-body panel_text">
+          <h3 style="text-align: left;"> 혹시 이것을 찾으시나요? </h3>
+          <div class="col-md-3 w3ls_w3l_banner_left w3ls_w3l_banner_left" style="padding-left: 0px; padding-right: 0px;">
+  					<div class="hover14 column"></div>
+  						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
 							<div class="agile_top_brand_left_grid1">
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
 											<a href="single.jsp"><img src="images/64.png" alt=" " class="img-responsive"></a>
-											<p>pepper salami (250 gm)</p>
+											<p> <%=rs.getString(1)%> </p>
 											<h4>$10.0</h4>
 										</div>
 										<div class="snipcart-details">
@@ -216,74 +230,162 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</figure>
 							</div>
 						</div>
-						</div>
+					</div>
           <div class="col-md-3 w3ls_w3l_banner_left" style="padding-left: 0px;">
-          							<div class="agile_top_brand_left_grid1" style="backgroud: white;">
-          		              <h3 class=title style="font-size: small;"> 요리설명 </h3>
-                            <p style="width: 250px; height: 150px; overflow: scroll;">
-                            "한국 요리(韓國料理, 문화어: 조선 료리)는 한국의 음식을 뜻한다. 복잡한 궁중 요리에서부터 지방의 특색 요리와 현대의 퓨전 요리에 이르기까지 재료와 조리법이 매우 다양하다. 전통적인 한국 정식은 밥, 국, 김치와 함께 나오는 많은 반찬들로 이루어진다. 한국 요리는 주로 쌀을 기반으로. 일반적으로 사용되는 성분 포함 참기름, 된장, 간장, 소금, 마늘, 생강, 다시마국물그리고 고추장 등으로 맛을 낸다. 김치는 거의 항상 모든 음식에서 제공된다. 식단은 계절별로 다양한데, 전통적으로 겨울 동안에는 마당에 구멍을 파고 땅 속에 묻어 놓은 장독에 저장된 김치와 그 밖에 절인 채소들에 많이 의존했다. 그러나 현재는 계절에 상관없이 대부분의 식단을 맛볼 수 있다."
-                            </p>
+            <div class="agile_top_brand_left_grid1" style="backgroud: white;">
+          	   <h3 class=title style="font-size: small;"> 요리설명 </h3>
+               <p style="width: -webkit-fill-available; height: 170px; overflow: scroll;">
+                 <%=rs.getString(3)%>
+               </p>
+               <h3 class=title style="font-size: small;"> 필요재료 </h3>
 
-                            <h3 class=title style="font-size: small;"> 필요재료 </h3>
-                            <li style="display: inline-block;"> 재료1 </li>
-                            <li style="display: inline-block;"> 재료2 </li>
-                            <li style="display: inline-block;"> 재료3 </li>
-                            <li style="display: inline-block;"> 아주긴재료이름름름4 </li>
-          							</div>
-          						</div>
-                      <div class="col-md-3 w3ls_w31_banner_left_reviews" style="width: 20%">
-                        <div class="agile_top_brand_left_grid1" style="background: white;">
-                          <h3 class=title style="font-size: small;"> 네티즌 후기 </h3>
-                          <div class="list-group list-group-alternate" style="margin-bottom: 0px;">
-						                      <a href="#" class="list-group-item"> 후기1 </a>
-						                      <a href="#" class="list-group-item"> 후기2 </a>
-						                      <a href="#" class="list-group-item"> 후기3 </a>
-						                      <a href="#" class="list-group-item"> 후기4 </a>
-						                      <a href="#" class="list-group-item"> 후기5 </a>
-						                      <a href="#" class="list-group-item"> 후기6 </a>
-                          </div>
-					              </div>
-          		       </div>
-                     <div class="col-md-3 w3ls_w3l_banner_left" style="padding-left: 0px;">
-                        <h3 class=title style="font-size: small;"> 인근마트 </h3>
-                       <div id="map" style="width: 120%; height:300px; background-color: grey;"> </div>
-                       <script>
-                         function initMap() {
-                         var uluru = {lat:  37.561093, lng: 126.993539};
-                         var map = new google.maps.Map(document.getElementById('map'), {
-                         zoom: 15,
-                         center: uluru
-                         });
-                         var marker = new google.maps.Marker({
-                         position: uluru,
-                         map: map
-                         });
-                         }
-                       </script>
-                       <script async defer
-                         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCO-USh8Pt7yrfjEmuvjV1rQ5RxrLc-V7w&callback=initMap">
-                       </script>
-          				</div>
-                </div>
-			        </div>
-			   <div class="panel panel-default">
-				<div class="panel-heading" role="tab" id="headingFive">
+               <%
+                     String[] sArray1 = rs.getString(3).split(",");
+                     for (int i = 0; i < 5; i++){
+                      // String plzs1 = "<li>" + sArray1[i] + "</li>";
+                       String plz = "<li style=" + '"' + "display: inline;" + '"' + ">" + sArray1[i] + "</li>";
+                       //String plzs = "<li>" + sArray1[i] + "</li>";
+                       out.println(plz);
+                     }
+               %>
+          	</div>
+          </div>
+          <div class="col-md-3 w3ls_w31_banner_left_reviews" style="width: 20%">
+            <div class="agile_top_brand_left_grid1" style="background: white;">
+              <h3 class=title style="font-size: small;"> 네티즌 후기 </h3>
+              <div class="list-group list-group-alternate" style="margin-bottom: 0px;">
+               <%
+                  String[] sArray2 = rs.getString(3).split(",");
+                  for (int i = 0; i < 5; i++){
+                    String plz = "<a href=" + '"' + '#' + '"' + "class=" + '"' + "list-group-item" + '"' + ">" + sArray2[i] + "</a>";
+                    out.println(plz);
+                  }
+               %>
+              </div>
+					  </div>
+          </div>
+          <div class="col-md-3 w3ls_w3l_banner_left" style="padding-left: 0px;">
+            <h3 class=title style="font-size: small;"> 인근마트 </h3>
+            <div id="map" style="width: 120%; height:300px; background-color: grey;"> </div>
+              <script>
+                function initMap() {
+                  var uluru = {lat:  37.561093, lng: 126.993539};
+                  var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 15,
+                    center: uluru
+                  });
+                  var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                  });
+                }
+              </script>
+              <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCO-USh8Pt7yrfjEmuvjV1rQ5RxrLc-V7w&callback=initMap">
+              </script>
+          	</div>
+           </div>
+         </div>
+
+        <div class="panel panel-default">
+				 <div class="panel-heading" role="tab" id="headingFive">
 				  <h4 class="panel-title asd">
 					<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
 					  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>요리검색 결과
 					</a>
 				  </h4>
-				</div>
-				<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive" aria-expanded="false" style="height: 0px;">
+				 </div>
+				 <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive" aria-expanded="false" style="height: 0px;">
 				   <div class="panel-body panel_text">
-             <div class="col-md-3 w3ls_w3l_banner_left" style="padding-left: 0px;">
-             							<div class="agile_top_brand_left_grid1" style="backgroud: white;">
-             		              <h3 class=title style="font-size: small;"> 요리설명 </h3>
-                          </div>
-             </div>
+             <h3 style="text-align: left;"> 요리이름 </h3>
+             <div class="col-md-3 w3ls_w3l_banner_left w3ls_w3l_banner_left" style="padding-left: 0px; padding-right: 0px;">
+     					<div class="hover14 column"></div>
+     						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+   							<div class="agile_top_brand_left_grid1">
+   								<figure>
+   									<div class="snipcart-item block">
+   										<div class="snipcart-thumb">
+   											<a href="single.jsp"><img src="images/64.png" alt=" " class="img-responsive"></a>
+   											<p>pepper salami (250 gm)</p>
+   											<h4>$10.0</h4>
+   										</div>
+   										<div class="snipcart-details">
+   											<form action="#" method="post">
+   												<fieldset>
+   													<input type="hidden" name="cmd" value="_cart">
+   													<input type="hidden" name="add" value="1">
+   													<input type="hidden" name="business" value=" ">
+   													<input type="hidden" name="item_name" value="pepper salami">
+   													<input type="hidden" name="amount" value="10.00">
+   													<input type="hidden" name="discount_amount" value="1.00">
+   													<input type="hidden" name="currency_code" value="USD">
+   													<input type="hidden" name="return" value=" ">
+   													<input type="hidden" name="cancel_return" value=" ">
+   													<input type="submit" name="submit" value="Add to cart" class="button">
+   												</fieldset>
+   											</form>
+   										</div>
+   									</div>
+   								</figure>
+   							</div>
+   						</div>
+   					</div>
+            <div class="col-md-3 w3ls_w3l_banner_left" style="padding-left: 0px;">
+              <div class="agile_top_brand_left_grid1" style="backgroud: white;">
+            	   <h3 class=title style="font-size: small;"> 요리설명 </h3>
+                 <p style="width: -webkit-fill-available; height: 170px; overflow: scroll;">
+                   "한국 요리(韓國料理, 문화어: 조선 료리)는 한국의 음식을 뜻한다. 복잡한 궁중 요리에서부터 지방의 특색 요리와 현대의 퓨전 요리에 이르기까지 재료와 조리법이 매우 다양하다. 전통적인 한국 정식은 밥, 국, 김치와 함께 나오는 많은 반찬들로 이루어진다. 한국 요리는 주로 쌀을 기반으로. 일반적으로 사용되는 성분 포함 참기름, 된장, 간장, 소금, 마늘, 생강, 다시마국물그리고 고추장 등으로 맛을 낸다. 김치는 거의 항상 모든 음식에서 제공된다. 식단은 계절별로 다양한데, 전통적으로 겨울 동안에는 마당에 구멍을 파고 땅 속에 묻어 놓은 장독에 저장된 김치와 그 밖에 절인 채소들에 많이 의존했다. 그러나 현재는 계절에 상관없이 대부분의 식단을 맛볼 수 있다."
+                 </p>
+            	</div>
+            </div>
+            <div class="col-md-3 w3ls_w3l_banner_left">
+              <div class="hover14 column"></div>
+              <div class="agile_top_brand_left_grid1" style="background: white;">
+                <h3 class=title style="font-size: small;"> 필요재료 </h3>
+                <li> 재료1 </li>
+                <li> 재료2 </li>
+                <li> 재료3 </li>
+                <li> 아주긴재료이름름름4 </li>
+                <div class="snipcart-details">
+                  <form action="#" method="post">
+                    <fieldset>
+                      <input type="hidden" name="cmd" value="_cart">
+                      <input type="hidden" name="add" value="1">
+                      <input type="hidden" name="business" value=" ">
+                      <input type="hidden" name="item_name" value="pepper salami">
+                      <input type="hidden" name="amount" value="10.00">
+                      <input type="hidden" name="discount_amount" value="1.00">
+                      <input type="hidden" name="currency_code" value="USD">
+                      <input type="hidden" name="return" value=" ">
+                      <input type="hidden" name="cancel_return" value=" ">
+                      <input type="submit" name="submit" value="장바구니 일괄담기" class="button">
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 w3ls_w3l_banner_left" style="width: 25%;">
+              <div class="hover14 column"></div>
+              <div class="agile_top_brand_left_grid1" style="background: white;">
+              <h3 class="title" style="font-size: small;"> '요리이름'과 비슷한 요리 </h3>
+              <div class="list-group list-group-alternate" style="margin-bottom: 5px;">
+						   <a href="#" class="list-group-item"> '요리1이름' 간단한 설명~~ </a>
+						   <a href="#" class="list-group-item"> 요리2 </a>
+						   <a href="#" class="list-group-item"> 요리3 </a>
+              </div>
+              <h3 class="title" style="font-size: small;"> '요리이름'와 잘 어울려요~! </h3>
+              <div class="list-group list-group-alternate" style="margin-bottom: 0px;">
+               <a href="#" class="list-group-item"> 요리1 </a>
+ 						   <a href="#" class="list-group-item"> 요리2 </a>
+ 						   <a href="#" class="list-group-item"> 요리3 </a>
+              </div>
+					   </div>
+            </div>
+
+				   </div>
 				  </div>
-				</div>
-			  </div>
+			   </div>
+
 			   <div class="panel panel-default">
 				<div class="panel-heading" role="tab" id="headingSix">
 				  <h4 class="panel-title asd">
@@ -312,13 +414,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				  </div>
 				</div>
 			  </div>
-			</div>
+		</div>
+  </div>
 </div>
 <!-- top-brands -->
-
 <!-- //top-brands -->
 <!-- fresh-vegetables -->
-
 <!-- //fresh-vegetables -->
 <!-- newsletter -->
 	<div class="newsletter">
@@ -433,33 +534,36 @@ $(document).ready(function(){
 				easingType: 'linear'
 				};
 			*/
-
 			$().UItoTop({ easingType: 'easeOutQuart' });
-
 			});
 	</script>
 <!-- //here ends scrolling icon -->
 <script src="js/minicart.js"></script>
 <script>
 		paypal.minicart.render();
-
 		paypal.minicart.cart.on('checkout', function (evt) {
 			var items = this.items(),
 				len = items.length,
 				total = 0,
 				i;
-
 			// Count the number of each item in the cart
 			for (i = 0; i < len; i++) {
 				total += items[i].get('quantity');
 			}
-
 			if (total < 3) {
 				alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
 				evt.preventDefault();
 			}
 		});
-
 	</script>
+  <script type="txt/javascript">
+    document.write("<p>This is 'MsgWindow'. I am 200px wide and 100px tall!</p>");
+    var jbString = rs.getString(3);
+    var jbSplit = jbString.split(',');
+    for ( var i in jbSplit) {
+      document.write( '<h3>' + jbSplit[i] + '</h3>');
+      <h3> jbSplit[i] </h3>
+    }
+  </script>
 </body>
 </html>
