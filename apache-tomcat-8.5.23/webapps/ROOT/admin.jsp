@@ -248,19 +248,28 @@ $(function () {
    			</ul>
     			<div class="tab_container">
         			<div id="tab1" class="tab_content">
-            			<table> 
+            			<table class = "admintable"> 
             				<tr> 
             					<th> <input type="checkbox" id="allCheck"/>전체선택 
             					</th>
+            					<th>사진 링크
+            					</th> 
             					<th>Name
             					</th>
             					<th>필요 재료
+            					</th> 
+            					<th>평균 가격
+            					</th> 
+            					<th>보관법
+            					</th> 
+            					<th>손질
             					</th> 
             				</tr> 
             				<tr> 
             					<td> <input type="checkbox"/> 
             					</td> 
-            				</tr> 
+            				</tr>
+            				<tr><td></td></tr> 
             				<tr> 
             					<td> <input type="checkbox"/>
             					</td> 
