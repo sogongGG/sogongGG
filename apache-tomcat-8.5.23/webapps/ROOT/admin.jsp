@@ -60,24 +60,8 @@ $(function(){ //전체선택 체크박스 클릭
 </head>
 
 <script src = "http://code.jquery.com/jquery-1.10.1.js"></script>
-<script>
-$(function () {
 
-    $(".tab_content").hide();
-    $(".tab_content:first").show();
-
-    $("ul.tabs li").click(function () {
-        $("ul.tabs li").removeClass("active").css("color", "#333");
-        //$(this).addClass("active").css({"color": "darkred","font-weight": "bolder"});
-        $(this).addClass("active").css("color", "darkred");
-        $(".tab_content").hide()
-        var activeTab = $(this).attr("rel");
-        $("#" + activeTab).fadeIn()
-    });
-});
-</script>
 <body>
-
 <%
 	String sessionid = "";
 	sessionid = (String)session.getAttribute("sessionid");
@@ -236,24 +220,13 @@ $(function () {
 	</div>
 <!-- //header -->
 <!-- banner -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 08dc604cbe3ccddf8863f8d9ab416d4068a08836
 
 
 
-=======
-
->>>>>>> parent of 3aeccf0... ad
 <!-- banner -->
 	<div class="administrator">
 		<h4>관리자 페이지 입니다!</h4>
 		<div id="container">
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 08dc604cbe3ccddf8863f8d9ab416d4068a08836
 
 			<script>
 			$("snip1535.hover").mouseleave(function() {
@@ -283,11 +256,7 @@ $(function () {
 			<button type="submit" class="snip1535" onclick="delete_row()">삭제</button>
 			</div>
 		<script>
-<<<<<<< HEAD
-    function add_row() {
-=======
 		function add_row() {
->>>>>>> 08dc604cbe3ccddf8863f8d9ab416d4068a08836
 				var table = document.getElementById('tab1_tbody');
     			var row = table.insertRow( table.rows.length ); // 하단에 추가
     			var cell1 = row.insertCell(0); cell1.innerHTML='<input type="checkbox"/>'
@@ -304,8 +273,6 @@ $(function () {
     		table.deleteRow( table.rows.length-1 ); // 하단부터 삭제
   		}
 		</script>
-=======
->>>>>>> parent of 3aeccf0... ad
     		<ul class="tabs">
         	<li class="active" rel="tab1">요리</li>
         	<li rel="tab2">재료</li>
@@ -313,10 +280,6 @@ $(function () {
    			</ul>
     			<div class="tab_container">
         			<div id="tab1" class="tab_content">
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 08dc604cbe3ccddf8863f8d9ab416d4068a08836
             			<table class = "type09">
             				<thead>
             				<tr>
@@ -394,53 +357,7 @@ $(function () {
             					<td></td>
             				</tr>
             				</tbody>
-=======
-            			<table class = "admintable">
-            				<tr>
-            					<th> <input type="checkbox" id="allCheck"/>전체선택 </th>
-            					<th>사진 링크
-            					</th>
-            					<th>Name
-            					</th>
-            					<th>필요 재료
-            					</th>
-            					<th>평균 가격
-            					</th>
-            					<th>보관법
-            					</th>
-            					<th>손질
-            					</th>
-            				</tr>
-            				<tr>
-            					<td> <input type="checkbox"/> </td>
-            				</tr>
-            				<tr><td></td></tr>
-            				<tr>
-            					<td> <input type="checkbox"/>
-            					</td>
-            				</tr>
-            				<tr>
-            					<td> <input type="checkbox"/>
-            					</td>
-            				</tr>
-            				<tr>
-            					<td> <input type="checkbox"/>
-            					</td>
-            				</tr>
-            				<tr>
-            					<td> <input type="checkbox"/>
-            					</td>
-            				</tr>
->>>>>>> parent of 3aeccf0... ad
             			</table>
-        			</div>
-        <!-- #tab1 -->
-        			<div id="tab2" class="tab_content">
-        			222
-        			</div>
-        <!-- #tab2 -->
-        			<div id="tab3" class="tab_content">
-        			333
         			</div>
         <!-- #tab3 -->
     			</div>
