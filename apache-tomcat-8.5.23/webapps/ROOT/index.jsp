@@ -82,7 +82,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <form action = "logout.jsp" method = "post">
     <div style="padding-top: 20px;">
       <ul>
-        <li style="display: inline-block; padding-right: 25px;  padding-left: 25px;"><%=sessionid %>님 환영합니다.</li>
+        <li style="display: inline-block; padding-right: 25px;"><%=sessionid %>님 환영합니다.</li>
         <li style="display: inline-block; padding-right: 25px;">
           <i class="fa fa-user" aria-hidden="true"> </i>
           <a href="#">MyPage</a>

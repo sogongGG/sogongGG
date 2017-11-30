@@ -720,18 +720,17 @@ Caused by: java.net.BindException: Address already in use: bind
 Thu Nov 30 07:04:55 KST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
 Thu Nov 30 07:05:17 KST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
 Thu Nov 30 07:05:25 KST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
- 1.8.0_131-b11
-30-Nov-2017 07:05:01.381 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
-30-Nov-2017 07:05:01.383 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\John\Desktop\ggit\sogongGG\apache-tomcat-8.5.23
-30-Nov-2017 07:05:01.384 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\John\Desktop\ggit\sogongGG\apache-tomcat-8.5.23
-30-Nov-2017 07:05:01.384 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:/Users/John/Desktop/ggit/sogongGG/apache-tomcat-8.5.23/conf/logging.properties
-30-Nov-2017 07:05:01.385 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
-30-Nov-2017 07:05:01.385 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
-30-Nov-2017 07:05:01.385 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
-30-Nov-2017 07:05:01.385 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:/Users/John/Desktop/ggit/sogongGG/apache-tomcat-8.5.23
-30-Nov-2017 07:05:01.385 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:/Users/John/Desktop/ggit/sogongGG/apache-tomcat-8.5.23
-30-Nov-2017 07:05:01.385 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:/Users/John/Desktop/ggit/sogongGG/apache-tomcat-8.5.23/temp
-30-Nov-2017 07:05:01.385 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\John\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\John\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\dotnet;C:\Program Files\Anaconda3;C:\Program Files\Anaconda3\Scripts;C:\Program Files\Anaconda3\Library\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Python36\Scripts;C:\Program Files\Python36;C:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files\MySQL\MySQL Utilities 1.6;C:\Go\bin;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Users\John\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip;C:\Program Files\Java\jdk1.8.0_131\bin;C:\Go\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.]
+Thu Nov 30 07:08:29 KST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Nov 30 07:08:47 KST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+30-Nov-2017 07:09:09.546 정보 [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+30-Nov-2017 07:09:09.547 정보 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+30-Nov-2017 07:09:09.947 정보 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+30-Nov-2017 07:09:10.426 정보 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+30-Nov-2017 07:09:10.548 정보 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+30-Nov-2017 07:09:10.552 정보 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+30-Nov-2017 07:09:10.556 정보 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+30-Nov-2017 07:09:10.557 정보 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\John\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\John\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\dotnet;C:\Program Files\Anaconda3;C:\Program Files\Anaconda3\Scripts;C:\Program Files\Anaconda3\Library\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Python36\Scripts;C:\Program Files\Python36;C:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files\MySQL\MySQL Utilities 1.6;C:\Go\bin;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Users\John\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip;C:\Program Files\Java\jdk1.8.0_131\bin;C:\Go\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.]
 30-Nov-2017 07:05:01.801 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
 30-Nov-2017 07:05:01.869 심각 [main] org.apache.coyote.AbstractProtocol.init Failed to initialize end point associated with ProtocolHandler ["http-nio-8080"]
  java.net.BindException: Address already in use: bind
@@ -885,3 +884,274 @@ Caused by: java.net.BindException: Address already in use: bind
 30-Nov-2017 07:05:04.094 정보 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
 30-Nov-2017 07:05:04.096 정보 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
 30-Nov-2017 07:05:04.097 정보 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+30-Nov-2017 07:09:09.373 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.23
+30-Nov-2017 07:09:09.381 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 28 2017 10:30:11 UTC
+30-Nov-2017 07:09:09.381 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.23.0
+30-Nov-2017 07:09:09.382 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+30-Nov-2017 07:09:09.382 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+30-Nov-2017 07:09:09.382 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+30-Nov-2017 07:09:09.382 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_131\jre
+30-Nov-2017 07:09:09.382 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_131-b11
+30-Nov-2017 07:09:09.383 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+30-Nov-2017 07:09:09.384 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\John\Desktop\ggit\sogongGG\apache-tomcat-8.5.23
+30-Nov-2017 07:09:09.384 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\John\Desktop\ggit\sogongGG\apache-tomcat-8.5.23
+30-Nov-2017 07:09:09.385 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:/Users/John/Desktop/ggit/sogongGG/apache-tomcat-8.5.23/conf/logging.properties
+30-Nov-2017 07:09:09.385 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-Nov-2017 07:09:09.386 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+30-Nov-2017 07:09:09.386 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+30-Nov-2017 07:09:09.386 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:/Users/John/Desktop/ggit/sogongGG/apache-tomcat-8.5.23
+30-Nov-2017 07:09:09.386 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:/Users/John/Desktop/ggit/sogongGG/apache-tomcat-8.5.23
+30-Nov-2017 07:09:09.386 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:/Users/John/Desktop/ggit/sogongGG/apache-tomcat-8.5.23/temp
+30-Nov-2017 07:09:09.387 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\John\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\John\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\dotnet;C:\Program Files\Anaconda3;C:\Program Files\Anaconda3\Scripts;C:\Program Files\Anaconda3\Library\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Python36\Scripts;C:\Program Files\Python36;C:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files\MySQL\MySQL Utilities 1.6;C:\Go\bin;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Users\John\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip;C:\Program Files\Java\jdk1.8.0_131\bin;C:\Go\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.]
+30-Nov-2017 07:09:09.629 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-Nov-2017 07:09:09.683 심각 [main] org.apache.coyote.AbstractProtocol.init Failed to initialize end point associated with ProtocolHandler ["http-nio-8080"]
+ java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:982)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:245)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:620)
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:66)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:997)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:549)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:875)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:621)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:644)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:311)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:494)
+
+30-Nov-2017 07:09:09.687 심각 [main] org.apache.catalina.core.StandardService.initInternal Failed to initialize connector [Connector[HTTP/1.1-8080]]
+ org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:113)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:549)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:875)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:621)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:644)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:311)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:494)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:1000)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	... 12 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:982)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:245)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:620)
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:66)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:997)
+	... 13 more
+
+30-Nov-2017 07:09:09.693 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+30-Nov-2017 07:09:09.703 심각 [main] org.apache.coyote.AbstractProtocol.init Failed to initialize end point associated with ProtocolHandler ["ajp-nio-8009"]
+ java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:982)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:245)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:620)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:997)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:549)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:875)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:621)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:644)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:311)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:494)
+
+30-Nov-2017 07:09:09.706 심각 [main] org.apache.catalina.core.StandardService.initInternal Failed to initialize connector [Connector[AJP/1.3-8009]]
+ org.apache.catalina.LifecycleException: Failed to initialize component [Connector[AJP/1.3-8009]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:113)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:549)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:875)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:621)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:644)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:311)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:494)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:1000)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	... 12 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:982)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:245)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:620)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:997)
+	... 13 more
+
+30-Nov-2017 07:09:09.710 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1130 ms
+30-Nov-2017 07:09:09.802 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-Nov-2017 07:09:09.803 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.23
+30-Nov-2017 07:09:09.829 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\John\Desktop\ggit\sogongGG\apache-tomcat-8.5.23\webapps\ROOT]
+30-Nov-2017 07:09:10.973 정보 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Nov-2017 07:09:11.294 경고 [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [275] milliseconds.
+30-Nov-2017 07:09:11.482 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\John\Desktop\ggit\sogongGG\apache-tomcat-8.5.23\webapps\ROOT] has finished in [1,652] ms
+30-Nov-2017 07:09:11.485 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 1774 ms
+30-Nov-2017 07:09:16.902 정보 [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+30-Nov-2017 07:09:16.903 정보 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+30-Nov-2017 07:09:16.904 정보 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+30-Nov-2017 07:09:16.904 정보 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+30-Nov-2017 07:09:16.944 정보 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+30-Nov-2017 07:09:16.944 정보 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+30-Nov-2017 07:09:16.945 정보 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+30-Nov-2017 07:09:16.946 정보 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+30-Nov-2017 07:09:23.234 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.23
+30-Nov-2017 07:09:23.250 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 28 2017 10:30:11 UTC
+30-Nov-2017 07:09:23.250 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.23.0
+30-Nov-2017 07:09:23.250 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+30-Nov-2017 07:09:23.250 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+30-Nov-2017 07:09:23.250 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+30-Nov-2017 07:09:23.250 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_131\jre
+30-Nov-2017 07:09:23.250 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_131-b11
+30-Nov-2017 07:09:23.250 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+30-Nov-2017 07:09:23.250 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\John\Desktop\ggit\sogongGG\apache-tomcat-8.5.23
+30-Nov-2017 07:09:23.250 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\John\Desktop\ggit\sogongGG\apache-tomcat-8.5.23
+30-Nov-2017 07:09:23.250 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:/Users/John/Desktop/ggit/sogongGG/apache-tomcat-8.5.23/conf/logging.properties
+30-Nov-2017 07:09:23.250 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-Nov-2017 07:09:23.250 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+30-Nov-2017 07:09:23.250 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+30-Nov-2017 07:09:23.250 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:/Users/John/Desktop/ggit/sogongGG/apache-tomcat-8.5.23
+30-Nov-2017 07:09:23.250 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:/Users/John/Desktop/ggit/sogongGG/apache-tomcat-8.5.23
+30-Nov-2017 07:09:23.250 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:/Users/John/Desktop/ggit/sogongGG/apache-tomcat-8.5.23/temp
+30-Nov-2017 07:09:23.250 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\John\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\John\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\dotnet;C:\Program Files\Anaconda3;C:\Program Files\Anaconda3\Scripts;C:\Program Files\Anaconda3\Library\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Python36\Scripts;C:\Program Files\Python36;C:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files\MySQL\MySQL Utilities 1.6;C:\Go\bin;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Users\John\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip;C:\Program Files\Java\jdk1.8.0_131\bin;C:\Go\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.]
+30-Nov-2017 07:09:23.528 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-Nov-2017 07:09:24.167 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+30-Nov-2017 07:09:24.192 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+30-Nov-2017 07:09:24.199 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+30-Nov-2017 07:09:24.200 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2206 ms
+30-Nov-2017 07:09:24.251 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-Nov-2017 07:09:24.251 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.23
+30-Nov-2017 07:09:24.283 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\John\Desktop\ggit\sogongGG\apache-tomcat-8.5.23\webapps\ROOT]
+30-Nov-2017 07:09:25.554 정보 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Nov-2017 07:09:25.720 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\John\Desktop\ggit\sogongGG\apache-tomcat-8.5.23\webapps\ROOT] has finished in [1,437] ms
+30-Nov-2017 07:09:25.736 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-Nov-2017 07:09:25.752 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+30-Nov-2017 07:09:25.752 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 1565 ms
+Thu Nov 30 07:09:28 KST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Nov 30 07:09:34 KST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Nov 30 07:09:55 KST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+30-Nov-2017 07:10:20.197 정보 [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+30-Nov-2017 07:10:20.198 정보 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+30-Nov-2017 07:10:20.552 정보 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+30-Nov-2017 07:10:21.076 정보 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+30-Nov-2017 07:10:21.124 정보 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+30-Nov-2017 07:10:21.130 정보 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+30-Nov-2017 07:10:21.149 정보 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+30-Nov-2017 07:10:21.155 정보 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+30-Nov-2017 07:11:26.701 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.23
+30-Nov-2017 07:11:26.713 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 28 2017 10:30:11 UTC
+30-Nov-2017 07:11:26.713 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.23.0
+30-Nov-2017 07:11:26.714 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+30-Nov-2017 07:11:26.714 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+30-Nov-2017 07:11:26.714 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+30-Nov-2017 07:11:26.715 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_131\jre
+30-Nov-2017 07:11:26.715 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_131-b11
+30-Nov-2017 07:11:26.716 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+30-Nov-2017 07:11:26.720 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\John\Desktop\ggit\sogongGG\apache-tomcat-8.5.23
+30-Nov-2017 07:11:26.720 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\John\Desktop\ggit\sogongGG\apache-tomcat-8.5.23
+30-Nov-2017 07:11:26.722 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:/Users/John/Desktop/ggit/sogongGG/apache-tomcat-8.5.23/conf/logging.properties
+30-Nov-2017 07:11:26.722 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-Nov-2017 07:11:26.722 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+30-Nov-2017 07:11:26.723 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+30-Nov-2017 07:11:26.723 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:/Users/John/Desktop/ggit/sogongGG/apache-tomcat-8.5.23
+30-Nov-2017 07:11:26.723 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:/Users/John/Desktop/ggit/sogongGG/apache-tomcat-8.5.23
+30-Nov-2017 07:11:26.724 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:/Users/John/Desktop/ggit/sogongGG/apache-tomcat-8.5.23/temp
+30-Nov-2017 07:11:26.724 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\John\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\John\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\dotnet;C:\Program Files\Anaconda3;C:\Program Files\Anaconda3\Scripts;C:\Program Files\Anaconda3\Library\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Python36\Scripts;C:\Program Files\Python36;C:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files\MySQL\MySQL Utilities 1.6;C:\Go\bin;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Users\John\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip;C:\Program Files\Java\jdk1.8.0_131\bin;C:\Go\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.]
+30-Nov-2017 07:11:27.149 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-Nov-2017 07:11:28.048 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+30-Nov-2017 07:11:28.056 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+30-Nov-2017 07:11:28.063 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+30-Nov-2017 07:11:28.064 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2683 ms
+30-Nov-2017 07:11:28.130 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-Nov-2017 07:11:28.131 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.23
+30-Nov-2017 07:11:28.154 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\John\Desktop\ggit\sogongGG\apache-tomcat-8.5.23\webapps\ROOT]
+30-Nov-2017 07:11:29.629 정보 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Nov-2017 07:11:29.868 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\John\Desktop\ggit\sogongGG\apache-tomcat-8.5.23\webapps\ROOT] has finished in [1,711] ms
+30-Nov-2017 07:11:29.882 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-Nov-2017 07:11:29.902 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+30-Nov-2017 07:11:29.906 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 1842 ms
+30-Nov-2017 08:40:39.766 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.23
+30-Nov-2017 08:40:39.766 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 28 2017 10:30:11 UTC
+30-Nov-2017 08:40:39.766 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.23.0
+30-Nov-2017 08:40:39.766 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+30-Nov-2017 08:40:39.766 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+30-Nov-2017 08:40:39.766 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+30-Nov-2017 08:40:39.766 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_131\jre
+30-Nov-2017 08:40:39.766 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_131-b11
+30-Nov-2017 08:40:39.766 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+30-Nov-2017 08:40:39.782 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\John\Desktop\ggit\sogongGG\apache-tomcat-8.5.23
+30-Nov-2017 08:40:39.782 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\John\Desktop\ggit\sogongGG\apache-tomcat-8.5.23
+30-Nov-2017 08:40:39.782 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:/Users/John/Desktop/ggit/sogongGG/apache-tomcat-8.5.23/conf/logging.properties
+30-Nov-2017 08:40:39.782 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-Nov-2017 08:40:39.782 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+30-Nov-2017 08:40:39.782 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+30-Nov-2017 08:40:39.782 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:/Users/John/Desktop/ggit/sogongGG/apache-tomcat-8.5.23
+30-Nov-2017 08:40:39.782 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:/Users/John/Desktop/ggit/sogongGG/apache-tomcat-8.5.23
+30-Nov-2017 08:40:39.782 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:/Users/John/Desktop/ggit/sogongGG/apache-tomcat-8.5.23/temp
+30-Nov-2017 08:40:39.782 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\John\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\John\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\dotnet;C:\Program Files\Anaconda3;C:\Program Files\Anaconda3\Scripts;C:\Program Files\Anaconda3\Library\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Python36\Scripts;C:\Program Files\Python36;C:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files\MySQL\MySQL Utilities 1.6;C:\Go\bin;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Users\John\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip;C:\Program Files\Java\jdk1.8.0_131\bin;C:\Go\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.]
+30-Nov-2017 08:40:40.251 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-Nov-2017 08:40:40.981 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+30-Nov-2017 08:40:40.981 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+30-Nov-2017 08:40:40.997 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+30-Nov-2017 08:40:40.997 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2362 ms
+30-Nov-2017 08:40:41.044 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-Nov-2017 08:40:41.044 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.23
+30-Nov-2017 08:40:41.075 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\John\Desktop\ggit\sogongGG\apache-tomcat-8.5.23\webapps\ROOT]
+30-Nov-2017 08:40:42.294 정보 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Nov-2017 08:40:42.465 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\John\Desktop\ggit\sogongGG\apache-tomcat-8.5.23\webapps\ROOT] has finished in [1,375] ms
+30-Nov-2017 08:40:42.465 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-Nov-2017 08:40:42.481 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+30-Nov-2017 08:40:42.481 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 1493 ms
+Thu Nov 30 08:40:57 KST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+30-Nov-2017 08:41:54.274 정보 [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+30-Nov-2017 08:41:54.275 정보 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+30-Nov-2017 08:41:54.815 정보 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+30-Nov-2017 08:41:55.342 정보 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+30-Nov-2017 08:41:55.388 정보 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+30-Nov-2017 08:41:55.403 정보 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+30-Nov-2017 08:41:55.427 정보 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+30-Nov-2017 08:41:55.430 정보 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]

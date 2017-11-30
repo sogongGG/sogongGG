@@ -157,9 +157,8 @@ $(document).ready(function() {
           geocodeLatLng(geocoder,uluru);
         });
         */
-        function initMap() {
-      }
-        function getLocation() {
+
+        function getLocation2() {
           if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(onSuccess, onError);
           }
@@ -195,7 +194,7 @@ $(document).ready(function() {
       <!-- -->
       <ul class="phone_email">
         <a class="btn" href="#">
-        <li><i class="fa fa-map-marker" aria-hidden="true" id="now_location" onclick="getLocation()">&nbsp;&nbsp;&nbsp;현재위치 확인</i></li></a>
+        <li><i class="fa fa-map-marker" aria-hidden="true" id="now_location" onclick="getLocation2()">&nbsp;&nbsp;&nbsp;현재위치 확인</i></li></a>
         <li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:store@grocery.com">store@grocery.com</a></li>
       </ul>
     </div>
