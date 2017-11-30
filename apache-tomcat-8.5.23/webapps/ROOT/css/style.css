@@ -74,10 +74,10 @@ input[type="submit"],#PPMiniCart .minicart-submit,.w3ls_vegetables ul li a,input
 	-ms-transition: .5s ease-in;
 }
 .agileits_header{
-	background:rgba(255,115,0,0.3);    /*¸ÇÀ§¿¡ »ó´Ü ¹Ù »ö±ò*/
+	background:rgba(255,115,0,0.3);    /*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½*/
 }
 .w3l_offers{
-	float:left;    /*¿ÞÂÊÁ¤·Ä*/
+	float:left;    /*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 }
 .w3l_offers a{
 	float: left;
@@ -2920,7 +2920,7 @@ ul.tabs li.active {
 	margin:6em 0 0 0;
 	padding-bottom : 30em;
 	background: #FBFCB6
-	
+
 }
 .administrator h4{
 	text-align:center;
@@ -2945,13 +2945,12 @@ ul.tabs li.active {
 .type09 thead{
     padding: 10px;
     font-weight: bold;
-    display : table;
     vertical-align: top;
     color: #369;
     border-bottom: 3px solid #036;
 }
 .type09 thead th {
-	width: 150px;
+	width: 130px;
     padding: 10px;
     font-weight: bold;
     vertical-align: top;

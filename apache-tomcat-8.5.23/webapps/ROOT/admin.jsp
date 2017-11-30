@@ -69,7 +69,7 @@ $(function(){ //전체선택 체크박스 클릭
 
 	Class.forName("com.mysql.jdbc.Driver");
 	Connection myconn=null;
-	myconn = DriverManager.getConnection("jdbc:mysql://localhost:3306/shoppingmall","root","ks01");
+	myconn = DriverManager.getConnection("jdbc:mysql://localhost:3306/shoppingmall","root","LNiaMelo561248^*");
 	String name = "select * from administrator where ID =?";
 
 	PreparedStatement pst=myconn.prepareStatement(name);
@@ -315,7 +315,7 @@ $(function(){ //전체선택 체크박스 클릭
             					<th>요리 이름</th>
             					<th>평점</th>
             					<th>요리 설명</th>
-            					<th>필요한 재료 리스트</th>
+            					<th style="width: 170px;">필요한 재료 리스트</th>
             					<th></th>
             				</tr>
             				</thead>
@@ -341,8 +341,8 @@ $(function(){ //전체선택 체크박스 클릭
             					<th>마트 사진 링크</th>
             					<th>마트 전화번호</th>
             					<th>마트 주소</th>
-            					<th>마트에서 구입한 리스트</th>
-            					<th>세일 중인 리스트</th>
+            					<th style="width: 200px;">마트에서 구입한 리스트</th>
+            					<th style="width: 150px;">세일 중인 리스트</th>
             					<th></th>
             				</tr>
             				</thead>
